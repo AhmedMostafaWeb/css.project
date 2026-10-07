@@ -1,0 +1,3530 @@
+// ==================================================
+// السؤال 1
+// رسالله ترحيب
+
+window.alert("Welcome Ahmed");
+
+
+// ==================================================
+// السؤال 2
+// خلي جملة تظهر داخل صفحة الويب
+// ==================================================
+
+// document.write("Welcome To JavaScript");
+// متعطل مؤقتًا عشان ما يمسحش محتوى الصفحة
+
+
+// ==================================================
+// السؤال 3
+// اعرض اسمك في الـ Console
+// ==================================================
+
+console.log("Ahmed");
+
+
+// ==================================================
+// السؤال 4
+// اعرض رسالة خطأ في الـ Console
+// ==================================================
+
+console.error("Something went wrong");
+
+
+// ==================================================
+// السؤال 5
+// Array تحتوي على 3 أسماء
+// ==================================================
+
+console.table(["Ahmed", "Mohamed", "Ali"]);
+
+
+// ==================================================
+// السؤال 6
+// كلمة في الـ Console بلون مختلف
+// ==================================================
+
+console.log("%cJavaScript", "color: red;");
+
+
+// ==================================================
+// السؤال 7
+// Variables للاسم والسن والبلد
+// ==================================================
+
+{
+    var name = "Ahmed";
+    var age = 19;
+    var country = "Egypt";
+
+    // ==================================================
+    // السؤال 8
+    // عرض القيم الموجودة داخل المتغيرات
+    // ==================================================
+
+    console.log(name);
+    console.log(age);
+    console.log(country);
+
+
+    // ==================================================
+    // السؤال 9
+    // جملة تجمع النص مع قيم المتغيرات
+    // ==================================================
+
+    console.log("Hello " + name + ", I am " + age + " years old");
+
+
+    // ==================================================
+    // السؤال 10
+    // الفرق بين اسم المتغير كنص واستخدام المتغير
+    // ==================================================
+
+    console.log("name");
+    console.log(name);
+}
+
+
+// ==================================================
+// السؤال 11
+// معرفة نوع String
+// ==================================================
+
+console.log(typeof "Ahmed");
+
+
+// ==================================================
+// السؤال 12
+// معرفة نوع Number صحيح
+// ==================================================
+
+console.log(typeof 20);
+
+
+// ==================================================
+// السؤال 13
+// معرفة نوع Number عشري
+// ==================================================
+
+console.log(typeof 20.5);
+
+
+// ==================================================
+// السؤال 14
+// معرفة نوع Array
+// ==================================================
+
+console.log(typeof [10, 20, 30]);
+
+
+// ==================================================
+// السؤال 15
+// Object
+// ==================================================
+
+{
+    var person = {
+        name: "Ahmed",
+        age: 19,
+        country: "Egypt"
+    };
+
+    console.log(person);
+    console.log(typeof person);
+}
+
+
+// ==================================================
+// السؤال 16
+// معرفة أنواع القيم
+// ==================================================
+
+console.log(typeof true);
+console.log(typeof false);
+console.log(typeof undefined);
+console.log(typeof null);
+
+
+// ==================================================
+// السؤال 17
+// تطبيق يجمع ما تعلمته في الساعة الأولى
+// ==================================================
+
+{
+    var userName = "Ahmed";
+    var userAge = 19;
+
+    var product = "Laptop";
+    var price = 15000;
+
+    var available = true;
+
+    var products = ["Laptop", "Mouse", "Keyboard"];
+
+    console.log(userName);
+    console.log(userAge);
+
+    console.log(product);
+    console.log(price);
+
+    console.log(available);
+
+    console.log(products);
+
+    console.log(typeof userName);
+    console.log(typeof userAge);
+    console.log(typeof product);
+    console.log(typeof price);
+    console.log(typeof available);
+    console.log(typeof products);
+}
+
+
+// ==================================================
+// 11
+// 3 Variables للاسم والسن والبلد
+// ==================================================
+
+{
+    var name = "ahmed";
+    var age = 19;
+    var country = "egyrt";
+
+    console.log(name);
+    console.log(age);
+    console.log(country);
+}
+
+
+// ==================================================
+// 14
+// Escape Character
+// ==================================================
+
+console.log("ilove \"javascript\"");
+console.log("ahmed\nmostafa");
+
+
+// ==================================================
+// 15
+// Strings + Variables
+// ==================================================
+
+{
+    // 1
+    var fristname = "ahmed";
+    var lastname = "mostafa";
+
+    console.log(fristname + " " + lastname);
+
+
+    // 2
+    var name = "ahmed";
+    var age = 20;
+    var country = "egypt";
+
+    console.log(
+        "my name is " + name +
+        " iam " + age +
+        " years old" +
+        " and i live in " + country
+    );
+
+
+    // 3
+    // Helloahmed
+
+
+    // 4
+    // 30
+
+
+    // 5
+    // 1020
+
+
+    // 6
+    // name
+    // ahmed
+}
+
+
+// ==================================================
+// 17
+// Arithmetic Operators
+// ==================================================
+
+console.log(15 + 25);
+console.log(50 - 20);
+console.log(5 * 8);
+console.log(20 / 5);
+console.log(17 % 5);
+console.log(3 ** 3);
+console.log(100 - 35);
+
+
+// ==================================================
+// 18
+// Unary Plus / Unary Minus
+// ==================================================
+
+console.log(+"10");
+console.log(-"20");
+
+// 30
+// -40
+// NaN
+
+
+// ==================================================
+// 19
+// String + Number
+// ==================================================
+
+console.log("20" + 10);
+console.log("20" - 10);
+
+// السؤال 1
+// "10" + 5 = 105
+
+// السؤال 2
+// "10" - 5 = 5
+
+// السؤال 3
+// "10" * 5 = 50
+
+// السؤال 4
+// "10" / 5 = 2
+
+
+// ==================================================
+// 22
+// Operators Challenge 1
+// ==================================================
+
+{
+    let a = 10;
+    let b = "20";
+    let c = 80;
+
+    console.log(++a + +b++ + +c++ - +a++);
+
+    // ++a = 11
+    // +b++ = 20
+    // +c++ = 80
+    // +a++ = 11
+    // الناتج = 100
+
+
+    console.log(++a + -b + +c++ - -a++ + +a);
+
+    // ++a = 13
+    // -b = -21
+    // +c++ = 81
+    // -a++ = -13
+    // +a = 14
+    // الناتج = 100
+
+
+    console.log(--c + +b + --a * +b++ - +b * a + --a - +true);
+
+    // --c = 81
+    // +b = 21
+    // --a = 13
+    // +b++ = 21
+    // +b = 22
+    // a = 13
+    // --a = 12
+    // +true = 1
+    // الناتج = 100
+}
+
+
+// ==================================================
+// Operators Challenge 2
+// ==================================================
+
+{
+    let d = "-100";
+    let e = "20";
+    let f = 30;
+    let g = true;
+
+    console.log(-d * +e);
+
+    // -d = 100
+    // +e = 20
+    // الناتج = 2000
+
+
+    console.log(++e * ++g + ++f + -d);
+
+    // ++e = 21
+    // ++g = 2
+    // ++f = 31
+    // -d = 100
+    // الناتج = 173
+}
+
+
+// ==================================================
+// Number Challenge
+// ==================================================
+
+{
+    let a = 100;
+    let b = 2_00.5;
+    let c = 1e2;
+    let d = 2.4;
+
+
+    // ==================================================
+    // السؤال 1
+    // أوجد أصغر رقم من جميع الـ Variables
+    // وأرجعه كرقم صحيح
+    // ==================================================
+
+    let smallest = Math.min(a, b, c, d);
+    console.log(Math.trunc(smallest));
+
+
+    // ==================================================
+    // السؤال 2
+    // استخدم a و d مرة واحدة
+    // للوصول إلى 10000
+    // ==================================================
+
+    console.log(Math.pow(a, Math.trunc(d)));
+
+
+    // ==================================================
+    // السؤال 3
+    // استخراج Integer "2" من d
+    // باستخدام 4 Methods
+    // ==================================================
+
+    console.log(Math.trunc(d));
+    console.log(Math.floor(d));
+    console.log(Math.round(d));
+    console.log(parseInt(d));
+
+
+    // ==================================================
+    // السؤال 4
+    // استخدم b + d
+    // ==================================================
+console.log((Math.trunc(b) / Math.ceil(d)).toFixed(2)); // 66.67 => String
+
+console.log(Math.ceil(Math.trunc(b) / Math.ceil(d))); // 67 => Number
+   
+}
+
+// 27
+{
+    let theName = "  Ahmed  ";
+
+    console.log(theName);
+    console.log(theName[1]);//space
+    console.log(theName[5]);//e
+
+    console.log(theName.charAt(1));//space
+    console.log(theName.charAt(5));//e
+
+    console.log(theName.length);//5 latter,2 space =9
+    console.log(theName.trim());//no space
+
+    console.log(theName.toUpperCase());//AHMED
+    console.log(theName.toLowerCase());//ahmed
+
+    console.log(theName.trim().charAt(2).toUpperCase());//M
+}
+
+
+// 28
+{
+    let a = "Elzero Web School";
+
+    console.log(a.indexOf("Web"));//7
+    console.log(a.indexOf("Web", 8));//-1
+    console.log(a.indexOf("o")); // 5
+    console.log(a.lastIndexOf("o")); // 15
+
+    console.log(a.slice(2, 6));
+    console.log(a.slice(-5, -3));
+
+    console.log(a.repeat(5));
+
+    console.log(a.split("", 6));
+}
+
+
+// 29
+{
+    let a = "Elzero Web School";
+
+    console.log(a.length);
+
+    console.log(a.substring(2, 6));//2-6
+    console.log(a.substring(6, 2));//2-6
+    console.log(a.substring(-10, 6)); // 0 - 6
+    console.log(a.substring(a.length - 5, a.length - 3));
+
+    console.log(a.substr(0, 6));
+    console.log(a.substr(17));
+    console.log(a.substr(-3));
+    console.log(a.substr(-5, 2));
+
+    console.log(a.includes("Web"));
+    console.log(a.includes("Web", 8));
+
+    console.log(a.startsWith("E"));
+    console.log(a.startsWith("E", 2));
+    console.log(a.startsWith("zero", 2));
+
+    console.log(a.endsWith("l"));
+}
+
+
+//30 chaglling string//
+{
+let a = "Elzero Web School";
+//1
+console.log(a.slice(2,6))
+//2
+console.log(a.charAt(13) .repeat(8))
+//3
+console.log(a.split(" ",1 ))
+//4
+console.log(`${a.substr(0, 6)} ${a.substr(11)}`);
+//5
+console.log(
+  a.charAt(0).toLowerCase() +
+  a.slice(1, -1) +
+  a.charAt(a.length - 1).toLowerCase()
+); // eLZERO WEB SCHOOl
+}
+*/
+
+/*
+//31
+{console.log(10 == "10"); // Compare Value Only
+console.log(-100 == "-100"); // Compare Value Only
+console.log(10 != "10"); // Compare Value Only
+
+console.log(10 === "10"); // Compare Value + Type
+console.log(10 !== "10"); // Compare Value + Type
+console.log(10 !== 10); // Compare Value + Type
+
+console.log(10 > 20);
+console.log(10 > 10);
+console.log(10 >= 10);
+
+console.log(10 < 20);
+console.log(10 < 10);
+console.log(10 <= 10);
+
+console.log(typeof "Osama" === typeof "Ahmed");
+}
+
+//32
+{
+    console.log(true);
+console.log(!true);
+
+console.log(!(10 == "10"));
+
+console.log(10 == "10" && 10 > 8 && 10 > 50);
+
+console.log(10 == "10" || 10 > 80 || 10 > 50);
+
+}
+//33
+{let price = 100;
+let discount = true;
+let discountAmount = 30;
+let country = "KSA";
+
+if (discount === true) {
+  price -= discountAmount; // price = price - discountAmount
+} else if (country === "Egypt") {
+  price -= 40;
+} else if (country === "Syria") {
+  price -= 50;
+} else {
+  price -= 10;
+}
+
+console.log(price);
+}
+//34
+{let price = 100;
+let discount = false;
+let discountAmount = 30;
+let country = "Egypt";
+let student = true;
+
+if (discount === true) {
+
+  price -= discountAmount;
+
+} else if (country === "Egypt") {
+
+  if (student === true) {
+
+    price -= discountAmount + 30;
+
+  } else {
+
+    price -= discountAmount + 10;
+
+  }
+
+} else {
+
+  price -= 10;
+
+}
+
+console.log(price);
+}
+//35
+/*
+  Conditional (Ternary) Operator
+*/
+
+let theName = "Mona";
+let theGender = "Female";
+let theAge = 30;
+
+if (theGender === "Male") {
+  console.log("Mr");
+} else {
+  console.log("Mrs");
+}
+
+// Condition ? If True : If False
+
+theGender === "Male" ? console.log("Mr") : console.log("Mrs");
+
+let result = theGender === "Male" ? "Mr" : "Mrs";
+
+document.write(result);
+
+console.log(theGender === "Male" ? "Mr" : "Mrs");
+
+console.log(`Hello ${theGender === "Male" ? "Mr" : "Mrs"} ${theName}`);
+
+theAge < 20
+  ? console.log(20)
+  : theAge > 20 && theAge < 60
+  ? console.log("20 To 60")
+  : theAge > 60
+  ? console.log("Larger Than 60")
+  : console.log("Unknown");
+
+
+//36
+
+    /*
+  Logical Or ||
+  -- Null + Undefined + Any Falsy Value
+  Nullish Coalescing Operator ??
+  -- Null + Undefined
+*/
+
+{console.log(Boolean(100));
+console.log(Boolean(-100));
+console.log(Boolean(0));
+console.log(Boolean(""));
+console.log(Boolean(null));
+
+let price = 0;
+
+console.log(`The Price Is ${price || 200}`);
+console.log(`The Price Is ${price ?? 200}`);
+}
+//38
+{let day = "A";
+
+switch (day) {
+  default:
+    console.log("Unknown Day");
+    break;
+  case 0:
+    console.log("Saturday");
+    break;
+  case 1:
+    console.log("Sunday");
+    break;
+  case 2:
+  case 3:
+    console.log("Monday");
+    break;
+}}
+
+
+
+
+//40
+{
+    let myFriends = ["Ahmed", "Mohamed", "Sayed", ["Marwan", "Ali"]];
+
+console.log(`Hello ${myFriends[0]}`);
+
+console.log(`Hello ${myFriends[2]}`);
+
+console.log(`${myFriends[1][2]}`);
+
+console.log(`Hello ${myFriends[3][1]}`);
+
+console.log(`${myFriends[3][1][2]}`);
+
+
+//Change Arrays Elements
+console.log(myFriends);
+myFriends[1] = "Gamal";
+
+//Check For Array Array.isArray(arr)
+console.log(Array.isArray(myFriends));
+
+}
+//42
+{
+    let myFriends = ["Ahmed", "Mohamed", "Sayed", "Alaa"];
+
+console.log(myFriends);
+//unshift("", "") Add Element To The First
+myFriends.unshift("Osama", "Nabil");
+
+console.log(myFriends);
+//push("", "") Add Element To The End
+myFriends.push("Samah", "Eman");
+
+console.log(myFriends);
+//shift() Remove First Element From Array
+let first = myFriends.shift();
+
+console.log(myFriends);
+
+console.log(`First Name Is ${first}`);
+//pop() Remove Last Element From Array
+let last = myFriends.pop();
+
+console.log(myFriends);
+
+console.log(`Last Name Is ${last}`);
+}
+//43
+{
+    let myFriends = ["Ahmed", "Mohamed", "Sayed", "Alaa", "Ahmed"];
+
+console.log(myFriends);
+//indexOf(Search Element, From Index [Opt])
+console.log(myFriends.indexOf("Ahmed"));
+console.log(myFriends.indexOf("Ahmed", 2));
+//lastIndexOf(Search Element, From Index [Opt])
+console.log(myFriends.lastIndexOf("Ahmed"));
+console.log(myFriends.lastIndexOf("Ahmed", -2));
+//includes(valueToFind, fromIndex [Opt]) [ES7]
+console.log(myFriends.includes("Ahmed"));
+console.log(myFriends.includes("Ahmed", 2));
+}
+//44
+{
+    /*
+  Arrays Methods [Sort]
+  - sort(Function [Opt])
+  - reverse
+*/
+    let myFriends = [10, "Sayed", "Mohamed", "90", 9000, 100, 20, "10", -20, -10];
+
+console.log(myFriends);
+console.log(myFriends.sort().reverse());
+}
+//45
+{
+    /*
+  Arrays Methods [Slicing]
+  - slice(Start [Opt], End [Opt] Not Including End)
+  --- slice() => All Array
+  --- If Start Is Undefined => 0
+  --- Negative Count From End
+  --- If End Is Undefined || > Indexes => Slice To The End Array.length
+  --- Return New Array
+  - splice(Start [Mand], DeleteCount [Opt] [0 No Remove], The Items To Add [Opt])
+  --- If Negative => Start From The End
+*/
+    let myFriends = ["Ahmed", "Sayed", "Ali", "Osama", "Gamal", "Ameer"];
+console.log(myFriends);
+console.log(myFriends.slice());
+console.log(myFriends.slice(1));
+console.log(myFriends.slice(1, 3));
+console.log(myFriends.slice(-3));
+console.log(myFriends.slice(1, -2));
+console.log(myFriends.slice(-4, -2));
+console.log(myFriends);
+
+myFriends.splice(1, 2, "Sameer", "Samara");
+
+console.log(myFriends);
+}
+//46
+{
+    /*
+  Arrays Methods [Joining]
+  - concat(array, array) => Return A New Array
+  - join(Separator)
+*/
+
+let myFriends = ["Ahmed", "Sayed", "Ali", "Osama", "Gamal", "Ameer"];
+let myNewFriends = ["Samar", "Sameh"];
+let schoolFriends = ["Haytham", "Shady"];
+
+let allFriends = myFriends.concat(myNewFriends, schoolFriends, "Gameel", [1, 2]);
+
+console.log(allFriends);
+
+console.log(allFriends.join());
+console.log(allFriends.join(""));
+console.log(allFriends.join(" @ "));
+console.log(allFriends.join("|"));
+console.log(allFriends.join("|").toUpperCase());
+}
+
+
+
+
+
+
+
+//48
+{
+    /*
+  Loop
+  - For
+  for ([1] [2] [3]) {
+    // Block Of Code
+  }
+*/
+
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+}
+}
+//49
+{
+    /*
+  Loop
+  - Loop On Sequences
+*/
+
+let myFriends = [1, 2, "Osama", "Ahmed", 3, 4, "Sayed", 6, "Ali"];
+
+let onlyNames = [];
+
+for (let i = 0; i < myFriends.length; i++) {
+  if (typeof myFriends[i] === "string") {
+    onlyNames.push(myFriends[i]);
+  }
+}
+
+console.log(onlyNames);
+
+// console.log(myFriends[0]);
+// console.log(myFriends[1]);
+// console.log(myFriends[2]);
+// console.log(myFriends[3]);
+// console.log(myFriends[4]);
+
+// for (let i = 0; i < myFriends.length; i++) {
+//   console.log(myFriends[i]);
+// }
+}
+//50
+{
+/*
+  Loop
+  - Nested Loops
+*/
+
+let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor"];
+
+let colors = ["Red", "Green", "Black"];
+
+let models = [2020, 2021];
+
+for (let i = 0; i < products.length; i++) {
+  console.log(products[i]);
+
+  console.log("Colors:");
+  for (let j = 0; j < colors.length; j++) {
+    console.log(colors[j]);
+  }
+
+  console.log("Models:");
+  for (let k = 0; k < models.length; k++) {
+    console.log(models[k]);
+  }
+}
+}
+//54
+{
+    /*
+  Loop
+  - While
+*/
+
+let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor", "iPhone"];
+
+let index = 0;
+
+while (index < products.length) {
+  console.log(products[index]);
+  index += 1;
+}
+}
+
+//55
+{
+    /*
+  Loop
+  - Do / While
+*/
+
+let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor", "iPhone"];
+
+let i = 0;
+
+do {
+  console.log(i);
+  i++;
+} while (false);
+
+console.log(i);
+}
+//57
+{
+    /*
+  Function
+  - What Is Function ?
+  - User-Defined vs Built In
+  - Syntax + Basic Usage
+  - Example From Real Life
+  - Parameter + Argument
+  - Practical Example
+*/
+
+function sayHello(userName) {
+  console.log(`Hi ${userName}`);
+}
+
+sayHello("Osama");
+sayHello("Sayed");
+sayHello("Ali");
+}
+//58
+{
+    /*
+  Function Advanced Examples
+*/
+
+function sayHello(userName, age) {
+  if (age < 20) {
+    console.log(`App is Not Suitable For You`);
+  } else {
+    console.log(`Hello ${userName} Your Age is ${age}`);
+  }
+}
+
+sayHello("Osama", 38);
+sayHello("Sayed", 40);
+sayHello("Ali", 18);
+
+function generateYears(start, end, exclude) {
+  for (let i = start; i <= end; i++) {
+    if (i === exclude) {
+      continue;
+    }
+    console.log(i);
+  }
+}
+
+generateYears(1982, 2021, 2020);
+}
+
+//59
+{
+/*
+  Function
+  - Return
+  - Automatic Semicolon Insertion [No Line Terminator Allowed]
+  - Interrupting
+*/
+
+function generate(start, end) {
+  for (let i = start; i <= end; i++) {
+    if (i === 15) {
+      return `Interrupting`;
+    }
+    console.log(i);
+  }
+}
+
+generate(10, 20);
+}
+//60
+{
+    /*
+  Function
+  - Default Function Parameters
+  - Function Parameters Default [Undefined]
+  - Old Strategies [Condition + Logical Or]
+  - ES6 Method
+*/
+
+function sayHello(username = "Unknown", age = "Unknown") {
+  
+  return `Hello ${username} Your Age Is ${age}`;
+}
+
+console.log(sayHello());
+}
+//61
+{
+    /*
+  Function
+  - Rest Parameters
+  - Only One Allowed
+  - Must Be Last Element
+*/
+
+function calc(...numbers) {
+  // console.log(Array.isArray(numbers));
+  let result = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    result += numbers[i]; // result = result + numbers[i]
+  }
+  return `Final Result Is ${result}`;
+}
+
+console.log(calc(10, 20, 10, 30, 50, 30));
+}
+//62
+{
+    /*
+  Function Advanced Practice
+  - Parameters
+  - Default
+  - Rest
+  - Loop
+  - Condition
+*/
+
+function showInfo(us = "Un", ag = "Un", rt = 0, show = "Yes", ...sk) {
+  document.write(`<div>`);
+
+  document.write(`<h2>Welcome, ${us}</h2>`);
+
+  document.write(`<p>Age: ${ag}</p>`);
+
+  document.write(`<p>Hour Rate: ${rt}</p>`);
+
+  if (show === "Yes") {
+
+    if (sk.length > 0) {
+
+      document.write(`<p>Skills: ${sk.join(" | ")}</p>`);
+
+    } 
+
+    else {
+
+      document.write(`<p>Skills: No Skills</p>`);
+
+    }
+
+  } 
+
+  else {
+
+    document.write(`<p>Skills Is Hidden</p>`);
+
+  }
+
+  document.write(`</div>`);
+
+}
+
+showInfo("Osama", 38, 20, "No", "Html", "CSS");
+}
+
+//64
+{
+    let calculator = function (num1, num2) {
+  return num1 + num2;
+};
+
+console.log(calculator(10, 20));
+}
+// ==================================================
+// MAP - الأساسيات
+// ==================================================
+
+
+// ==================================================
+// المسألة الأولى:
+// استخدم map لإنشاء Array جديدة، بحيث تجمع كل عنصر
+// مع نفسه.
+// ==================================================
+
+let numbers1 = [1, 2, 3, 4, 5];
+
+let result1 = numbers1.map(function (element) {
+  return element + element;
+});
+
+console.log(result1);
+
+
+// ==================================================
+// المسألة الثانية:
+// استخدم map لإنشاء Array جديدة، بحيث تضرب كل عنصر
+// في 3.
+// ==================================================
+
+let numbers2 = [2, 4, 6, 8];
+
+let result2 = numbers2.map(function (element) {
+  return element * 3;
+});
+
+console.log(result2);
+
+
+// ==================================================
+// المسألة الثالثة:
+// استخدم map لإنشاء Array جديدة، بحيث تحول كل كلمة
+// إلى حروف كبيرة.
+// ==================================================
+
+let names = ["ahmed", "youssef", "ali", "mohamed"];
+
+let result3 = names.map(function (element) {
+  return element.toUpperCase();
+});
+
+console.log(result3);
+
+
+// ==================================================
+// المسألة الرابعة:
+// استخدم map لإنشاء Array جديدة، بحيث تضيف علامة
+// تعجب (!) في نهاية كل كلمة.
+// ==================================================
+
+let words = ["hello", "welcome", "coffee", "javascript"];
+
+let result4 = words.map(function (element) {
+  return element + "!";
+});
+
+console.log(result4);
+
+
+
+
+// ==================================================
+// MAP - Practice
+// ==================================================
+
+
+// ==================================================
+// المسألة الأولى:
+// قلب حالة الحروف.
+// الحرف الكبير يبقى صغير، والصغير يبقى كبير.
+// ==================================================
+
+let word = "AhMeD";
+
+let result5 = word
+  .split("")
+  .map(function (element) {
+    return element === element.toUpperCase()
+      ? element.toLowerCase()
+      : element.toUpperCase();
+  })
+  .join("");
+
+console.log(result5);
+
+
+// ==================================================
+// المسألة الثانية:
+// عكس إشارة الأرقام.
+// الموجب يبقى سالب، والسالب يبقى موجب.
+// ==================================================
+
+let numbers3 = [10, -20, 30, -40];
+
+let result6 = numbers3.map(function (element) {
+  return -element;
+});
+
+console.log(result6);
+
+
+// ==================================================
+// المسألة الثالثة:
+// حذف الأرقام من الـ String ونترك الحروف فقط.
+// ==================================================
+
+let text1 = "a1b2c3d4";
+
+let result7 = text1
+  .split("")
+  .map(function (element) {
+    return isNaN(parseInt(element)) ? element : "";
+  })
+  .join("");
+
+console.log(result7);
+
+
+
+
+// ==================================================
+// FILTER - الأساسيات
+// ==================================================
+
+
+// ==================================================
+// المسألة الأولى:
+// اختيار الأصدقاء الذين يبدأ اسمهم بحرف A.
+// ==================================================
+
+let friends = ["Ahmed", "Sameh", "Asmaa", "Amgad", "Israa"];
+
+let filteredFriends = friends.filter(function (element) {
+  return element.startsWith("A");
+});
+
+console.log(filteredFriends);
+
+
+// ==================================================
+// المسألة الثانية:
+// الحصول على الأرقام الزوجية فقط.
+// ==================================================
+
+let numbers4 = [11, 20, 2, 5, 17, 10];
+
+let evenNumbers = numbers4.filter(function (element) {
+  return element % 2 === 0;
+});
+
+console.log(evenNumbers);
+
+
+// ==================================================
+// المسألة الثالثة:
+// اختيار الأعمار التي تساوي 18 أو أكبر.
+// ==================================================
+
+let ages = [10, 15, 20, 8, 25];
+
+let bigAges = ages.filter(function (element) {
+  return element >= 18;
+});
+
+console.log(bigAges);
+
+
+// ==================================================
+// المسألة الرابعة:
+// تطبيق الفرق بين map و filter.
+// ==================================================
+
+let nums1 = [1, 2, 3, 4];
+
+let mapResult = nums1.map(function (element) {
+  return element * 2;
+});
+
+let filterResult = nums1.filter(function (element) {
+  return element % 2 === 0;
+});
+
+console.log(mapResult);
+console.log(filterResult);
+
+
+
+
+// ==================================================
+// FILTER - Practice
+// ==================================================
+
+
+// ==================================================
+// المسألة الأولى:
+// اختيار الكلمات التي عدد حروفها 4 أو أقل.
+// ==================================================
+
+let sentence = "I Love Foood Code Too Playing Much";
+
+let smallWords = sentence
+  .split(" ")
+  .filter(function (element) {
+    return element.length <= 4;
+  })
+  .join(" ");
+
+console.log(smallWords);
+
+
+// ==================================================
+// المسألة الثانية:
+// حذف الأرقام من String والاحتفاظ بالحروف فقط.
+// ==================================================
+
+let text2 = "Elz123er4o";
+
+let lettersOnly = text2
+  .split("")
+  .filter(function (element) {
+    return isNaN(parseInt(element));
+  })
+  .join("");
+
+console.log(lettersOnly);
+
+
+// ==================================================
+// المسألة الثالثة:
+// الاحتفاظ بالأرقام فقط، ثم تربيع كل رقم باستخدام map.
+// ==================================================
+
+let mixed = "A13BS2ZX";
+
+let numbersSquared = mixed
+  .split("")
+  .filter(function (element) {
+    return !isNaN(parseInt(element));
+  })
+  .map(function (element) {
+    return element * element;
+  })
+  .join("");
+
+console.log(numbersSquared);
+
+
+
+
+// ==================================================
+// REDUCE - الأساسيات
+// ==================================================
+
+
+// ==================================================
+// المسألة الأولى:
+// جمع كل الأرقام.
+// ==================================================
+
+let numbers5 = [10, 20, 30, 40];
+
+let total = numbers5.reduce(function (acc, current) {
+  return acc + current;
+}, 0);
+
+console.log(total);
+
+
+// ==================================================
+// المسألة الثانية:
+// جمع أسعار المنتجات.
+// ==================================================
+
+let prices = [50, 30, 70, 20];
+
+let totalPrices = prices.reduce(function (acc, current) {
+  return acc + current;
+}, 0);
+
+console.log(totalPrices);
+
+
+// ==================================================
+// المسألة الثالثة:
+// استخدام Reduce مع بداية مختلفة.
+// ==================================================
+
+let numbers6 = [10, 20, 30];
+
+let result8 = numbers6.reduce(function (acc, current) {
+  return acc + current;
+}, 100);
+
+console.log(result8);
+
+
+// ==================================================
+// المسألة الرابعة:
+// استخدام Accumulator و Current و Index و Array.
+// ==================================================
+
+let nums2 = [10, 20, 15, 30];
+
+let add = nums2.reduce(function (acc, current, index, arr) {
+  return acc + current;
+}, 5);
+
+console.log(add);
+
+
+// ==================================================
+// المسألة الخامسة:
+// حساب إجمالي أسعار القهوة.
+// ==================================================
+
+let coffeePrices = [40, 60, 50, 80, 30];
+
+let coffeeTotal = coffeePrices.reduce(function (acc, current) {
+  return acc + current;
+}, 0);
+
+console.log(coffeeTotal);
+
+
+
+
+// ==================================================
+// REDUCE - Practice
+// ==================================================
+
+
+// ==================================================
+// المسألة الأولى:
+// إيجاد أطول كلمة في الـ Array.
+// ==================================================
+
+let theBiggest = [
+  "Bla",
+  "Propaganda",
+  "Other",
+  "AAA",
+  "Battery",
+  "Test",
+  "Propaganda_Two"
+];
+
+let check = theBiggest.reduce(function (acc, current) {
+  return acc.length > current.length ? acc : current;
+});
+
+console.log(check); 
+
+//79//
+{
+  // ==================================================
+// Object - Intro
+//
+// الـ Object بنستخدمه لتجميع بيانات ووظائف مرتبطة ببعض.
+// Property = بيانات
+// Method = Function داخل الـ Object
+// ==================================================
+
+let user = {
+
+  // بيانات المستخدم
+  theName: "Osama",
+  theAge: 38,
+
+  // وظيفة داخل الـ Object
+  sayHello: function () {
+    return `Hello`;
+  },
+
+};
+
+
+// ==================================================
+// الوصول إلى بيانات الـ Object
+// ==================================================
+
+console.log(user.theName);
+console.log(user.theAge);
+
+
+// ==================================================
+// تشغيل الـ Method
+// ==================================================
+
+console.log(user.sayHello());
+
+
+// ==================================================
+// تجربة Window Object
+// ==================================================
+
+console.log(window);
+
+
+// ==================================================
+// مثال إضافي
+// ==================================================
+
+let car = {
+  brand: "BMW",
+  speed: 200
+};
+
+console.log(car.brand);
+console.log(car.speed);
+
+
+// ==================================================
+// الخلاصة
+//
+// Object
+// → يجمع بيانات ووظائف مرتبطة ببعض.
+//
+// Property
+// → بيانات داخل الـ Object.
+//
+// Method
+// → Function داخل الـ Object.
+//
+// الوصول:
+// user.theName
+//
+// تشغيل Method:
+// user.sayHello()
+// ==================================================
+}
+//80//
+{
+ // ==================================================
+// Object - Dig Deeper
+//
+// Dot Notation vs Bracket Notation
+// Dynamic Property Name
+// ==================================================
+
+let myVar = "country";
+// myVar يحتوي على اسم الـProperty: "country"
+
+
+let user = {
+  theName: "Osama",
+  country: "Egypt",
+};
+
+
+// ==================================================
+// الوصول باستخدام Dot Notation
+// ==================================================
+
+console.log(user.theName); // Osama
+console.log(user.country); // Egypt
+
+
+// ==================================================
+// هنا JavaScript تبحث عن Property اسمها myVar
+// وليس عن قيمة المتغير myVar
+// لذلك النتيجة undefined
+// ==================================================
+
+console.log(user.myVar); // undefined
+
+
+// ==================================================
+// هنا نستخدم قيمة myVar كاسم للـProperty
+// myVar = "country"
+// لذلك تصبح:
+// user["country"]
+// ==================================================
+
+console.log(user[myVar]); // Egypt
+
+
+// ==================================================
+// الخلاصة
+//
+// user.country
+// → الوصول المباشر للـProperty.
+//
+// user.myVar
+// → يبحث عن Property اسمها myVar.
+//
+// user[myVar]
+// → يستخدم قيمة myVar كاسم للـProperty.
+//
+// لو:
+// myVar = "country"
+//
+// user[myVar]
+// → Egypt
+// ==================================================
+}
+//81//
+{
+  // ==================================================
+// Object - Nested Object And Trainings
+//
+// Nested Object:
+// Object جوه Object.
+//
+// وممكن الـObject يحتوي على:
+// - Array
+// - Method
+// - Object تاني
+// ==================================================
+
+let user = {
+  name: "Osama",
+  age: 38,
+
+  // Array داخل الـObject
+  skills: ["HTML", "CSS", "JS"],
+
+  available: false,
+
+  // Nested Object
+  addresses: {
+    ksa: "Riyadh",
+
+    // Nested Object أعمق
+    egypt: {
+      one: "Cairo",
+      two: "Giza",
+    },
+  },
+
+  // Method داخل الـObject
+  checkAv: function () {
+    if (user.available === true) {
+      return `Free For Work`;
+    } else {
+      return `Not Free`;
+    }
+  },
+};
+
+
+// ==================================================
+// الوصول إلى Properties العادية
+// ==================================================
+
+console.log(user.name); // Osama
+console.log(user.age); // 38
+
+
+// ==================================================
+// الوصول إلى Array داخل الـObject
+// ==================================================
+
+console.log(user.skills); // ["HTML", "CSS", "JS"]
+
+// استخدام Method على الـArray
+console.log(user.skills.join(" | ")); // HTML | CSS | JS
+
+// الوصول إلى عنصر معين بالـIndex
+console.log(user.skills[2]); // JS
+
+
+// ==================================================
+// الوصول إلى Nested Object
+// ==================================================
+
+console.log(user.addresses.ksa); // Riyadh
+
+console.log(user.addresses.egypt.one); // Cairo
+
+
+// ==================================================
+// الوصول باستخدام Bracket Notation
+// ==================================================
+
+console.log(user["addresses"].egypt.one); // Cairo
+
+console.log(user["addresses"]["egypt"]); // { one: "Cairo", two: "Giza" }
+
+console.log(user["addresses"]["egypt"]["one"]); // Cairo
+
+
+// ==================================================
+// تشغيل الـMethod
+// ==================================================
+
+console.log(user.checkAv()); // Not Free
+
+
+// ==================================================
+// الخلاصة
+//
+// Object ممكن يحتوي على Object تاني.
+// وده اسمه Nested Object.
+//
+// وممكن الـObject يحتوي على Array.
+// وممكن يحتوي على Method.
+//
+// للوصول للـNested Object:
+// user.addresses.egypt.one
+//
+// أو:
+// user["addresses"]["egypt"]["one"]
+//
+// والـArray داخل الـObject نقدر نستخدم عليها
+// Methods أو Index عادي.
+//
+// والـMethod ممكن تستخدم بيانات الـObject
+// وتعمل عليها شرط أو عملية.
+// ==================================================
+}
+//82//
+{
+  // ==================================================
+// Object - Create With New Keyword
+// ==================================================
+
+// إنشاء Object باستخدام new Object()
+// ==================================================
+
+let user = new Object({
+  age: 20,
+});
+
+console.log(user); // { age: 20 }
+
+
+// ==================================================
+// تعديل قيمة Property موجودة
+// ==================================================
+
+user.age = 38;
+
+console.log(user.age); // 38
+
+
+// ==================================================
+// إضافة Property جديدة
+// ==================================================
+
+user["country"] = "Egypt";
+
+console.log(user.country); // Egypt
+
+
+// ==================================================
+// إضافة Method جديدة
+// ==================================================
+
+user.sayHello = function () {
+  return `Hello`;
+};
+
+console.log(user.sayHello()); // Hello
+
+
+// ==================================================
+// طباعة الـObject كامل
+// ==================================================
+
+console.log(user); // { age: 38, country: "Egypt", sayHello: ƒ }
+
+
+// ==================================================
+// الخلاصة
+//
+// new Object()
+// → إنشاء Object.
+//
+// بعد إنشاء الـObject نقدر:
+// - نغيّر قيمة Property.
+// - نضيف Property جديدة.
+// - نضيف Method جديدة.
+//
+// ==================================================
+}
+//83//
+{
+  // ==================================================
+// Function this Keyword
+//
+// this بتشير لمين حسب طريقة استدعاء الـFunction.
+// ==================================================
+
+
+// ==================================================
+// 1 - this في الـGlobal
+// ==================================================
+
+console.log(this); // Window
+console.log(this === window); // true
+
+
+// ==================================================
+// 2 - Global Variable مع window و this
+// ==================================================
+
+myVar = 100;
+
+console.log(window.myVar); // 100
+console.log(this.myVar); // 100
+
+
+// ==================================================
+// 3 - this داخل Function عادية
+// ==================================================
+
+function sayHello() {
+  return this;
+}
+
+sayHello();
+
+console.log(sayHello() === window); // true
+
+
+
+// ==================================================
+// 4 - this داخل Object Method
+// ==================================================
+
+let user = {
+  age: 38,
+
+  ageInDays: function () {
+    return this.age * 365;// = user.age 
+  },
+};
+
+console.log(user.age); // 38
+console.log(user.ageInDays()); // 13870
+
+
+// ==================================================
+// الخلاصة
+//
+// في الـGlobal:
+// this = window
+//
+// داخل Function عادية في الوضع العادي:
+// this = window
+//
+// داخل Event:
+// this = العنصر نفسه
+//
+// داخل Object Method:
+// this = الـObject اللي شغّل الـMethod
+//
+// أهم مثال:
+//
+// user.ageInDays()
+//
+// هنا:
+// this = user
+// this.age = user.age
+// ==================================================
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+===========================
+     JavaScript Topics
+===========================
+
+
+JavaScript Basics
+
+- ✅ window.alert()
+- ✅ document.write()
+- ✅ console.log()
+- ✅ console.error()
+- ✅ console.table()
+- ✅ %c لتغيير لون النص في الـ Console
+- ✅ Variables
+- ✅ let / var
+- ✅ الفرق بين اسم المتغير وقيمة المتغير
+- ✅ typeof
+  - String
+  - Number
+  - Decimal Number
+  - Array
+  - Object
+  - Boolean
+  - Undefined
+  - Null
+- ✅ Escape Character
+- ✅ Escape Character + "\n"
+
+
+===========================
+          Number
+===========================
+
+- ✅ toString()
+- ✅ toFixed()
+- ✅ Number()
+- ✅ parseInt()
+- ✅ parseFloat()
+- ✅ Number.isInteger()
+- ✅ Number.isNaN()
+
+
+===========================
+           Math
+===========================
+
+- ✅ Math.round()
+- ✅ Math.ceil()
+- ✅ Math.floor()
+- ✅ Math.min()
+- ✅ Math.max()
+- ✅ Math.pow()
+- ✅ Math.random()
+- ✅ Math.trunc()
+
+
+===========================
+          String
+===========================
+
+- ✅ Index
+- ✅ charAt()
+- ✅ length
+- ✅ trim()
+- ✅ toUpperCase()
+- ✅ toLowerCase()
+- ✅ Chain
+- ✅ indexOf()
+- ✅ lastIndexOf()
+- ✅ repeat()
+- ✅ slice()
+- ✅ zfill()
+- ✅ substring()
+- ✅ substr()
+- ✅ includes()
+- ✅ startsWith()
+- ✅ endsWith()
+
+
+===========================
+   Comparison Operators
+===========================
+
+- ✅ Equal (==)
+- ✅ Not Equal (!=)
+- ✅ Identical (===)
+- ✅ Not Identical (!==)
+- ✅ Greater Than (>)
+- ✅ Less Than (<)
+- ✅ Greater Than Or Equal (>=)
+- ✅ Less Than Or Equal (<=)
+
+
+===========================
+     Logical Operators
+===========================
+
+- ✅ NOT (!)
+- ✅ AND (&&)
+- ✅ OR (||)
+
+
+===========================
+        Conditions
+===========================
+
+- ✅ Condition / true / false
+- ✅ if
+- ✅ else
+- ✅ else if
+
+
+===========================
+          Array
+===========================
+
+- ✅ shift()
+- ✅ push()
+- ✅ unshift()
+- ✅ pop()
+- ✅ indexOf()
+- ✅ lastIndexOf()
+- ✅ includes()
+- ✅ sort()
+- ✅ reverse()
+- ✅ slice()
+- ✅ splice()
+- ✅ join()
+- ✅ concat()
+
+*/
+
+
+
+
+
+// جزء الـ Variables والـ console.log
+console.log("coffee house");
+
+let coffeename = "clasic coffee";
+let price = 5;
+
+console.log(coffeename);
+console.log(price);
+
+
+let coffeename2 = "espreso";
+let price2 = 4;
+
+console.log(coffeename2);
+console.log(price2);
+
+
+// جزء الـ Array + Loop + if / else if / else
+// وربط اسم المنتج بالسعر عن طريق الـ index
+
+{
+  let coffeenames = ["clasic coffee ", "espresso", "captsheno", "latta"];
+  let price = [5, 4, 7, 9];
+  let search = "coffee";
+
+  for (let i = 0; i < coffeenames.length; i++) {
+
+    if (coffeenames[i] === "espresso") {
+      console.log(coffeenames[i].toUpperCase(), price[i]);
+    }
+
+    else if (coffeenames[i] === "captsheno") {
+      console.log("found captsheno ".toLowerCase());
+    }
+
+    else {
+      console.log("not espresso & captsheno");
+    }
+  }
+}
+
+
+// جزء البحث داخل الـ Array باستخدام includes()
+// هنا بندور على كلمة coffee داخل أسماء المنتجات
+
+{
+  let coffeenames = ["clasic coffee ", "espresso", "captsheno", "latta"];
+  let price = [5, 4, 7, 9];
+  let search = "coffee";
+
+  for (let i = 0; i < coffeenames.length; i++)
+
+    if (coffeenames[i].includes(search)) {
+      console.log(coffeenames[i], price[i]);
+    }
+}
+
+
+// جزء البحث عن Espresso باستخدام includes()
+
+{
+  let coffeenames = ["clasic coffee ", "espresso", "captsheno", "latta"];
+  let price = [5, 4, 7, 9];
+  let search = "espresso";
+
+  for (let i = 0; i < coffeenames.length; i++)
+
+    if (coffeenames[i].includes(search)) {
+      console.log(coffeenames[i], price[i]);
+    }
+}
+
+
+// جزء البحث عن Captsheno باستخدام includes()
+
+{
+  let coffeenames = ["clasic coffee ", "espresso", "captsheno", "latta"];
+  let price = [5, 4, 7, 9];
+  let search = "captsheno";
+
+  for (let i = 0; i < coffeenames.length; i++)
+
+    if (coffeenames[i].includes(search)) {
+      console.log(coffeenames[i], price[i]);
+    }
+}
+
+
+
+
+
+
+//                numper                //
+
+//  TO STRING  //
+{
+  let price =5;
+  price.toString()
+  console.log(typeof price.toString()) //للتاكيز انو اتحول 
+}
+//  to fixed //
+{
+  let price =59.3443;
+ console.log(price.toFixed(2)) 
+}
+//  NUMPER //
+{
+  let price ="20"
+  console.log(Number(price))
+}
+// parseint //
+{
+  let price =40.9839298
+  console.log(parseInt(price))
+}
+// numper .intager  //
+{
+  let price = 65
+  console.log(Number.isInteger(price))
+}
+// numper . isnun  //
+{
+  let price = "ahmed"
+  console.log(Number.isNaN(Number(price)))
+}
+
+//                                MATH                       //
+//MATH ROUND//
+{
+  let price =4.6
+  console.log(Math.round(price))
+}
+//MATH CEILL//
+{
+  let price =4.6
+  console.log(Math.ceil(price))
+}
+//MATH FLOOR//
+{
+  let price =4.6
+  console.log(Math.floor(price))
+}
+// MATH MIN//
+{
+  let price = [5, 4, 7, 9];
+
+  console.log(Math.min(5,4,7,9));
+}
+// MATH MAX//
+{
+  let price = [5, 4, 7, 9];
+
+  console.log(Math.max(5,4,7,9));
+}
+// math pow //
+{
+  console.log(Math.pow(2,4))
+
+}
+// math random //
+{
+  console.log(Math.random())
+}
+//MATH TRUCKS //
+{
+  let price = 4.78
+  console.log(Math.trunc(price))
+}
+
+//                         STRING                 //
+//index//
+{
+let coffee ="coffee"
+console.log(coffee[0])
+console.log(coffee[1])
+console.log(coffee[2])
+console.log(coffee[3])
+console.log(coffee[4])
+console.log(coffee[5])
+}
+//lenght//
+{
+  let coffee ="coffee"
+  console.log(coffee.length)
+}
+//trim//
+{
+  let coffee ="  coffee  "
+  console.log(coffee.trim())
+}
+//to uppercase //
+{
+  let coffee ="coffee"
+  console.log(coffee.toUpperCase())
+}
+//to lowercase //
+{
+  let coffee ="coffee"
+  console.log(coffee.toLowerCase())
+}
+//chain//
+{ 
+  let coffee ="   coffee   "
+  console.log(coffee.trim() .toUpperCase())
+}
+//index of//
+{
+  let coffee ="coffee house"
+  console.log(coffee.indexOf("house"))
+  console.log(coffee.indexOf("h"))
+  console.log(coffee.indexOf("f"))
+}
+// last index of//
+{
+  let coffee ="coffee coffee"
+  console.log(coffee.lastIndexOf("coffee"))
+  
+}
+//repet//
+{
+  let coffee ="   coffee   "
+  console.log(coffee.repeat(2))
+}
+//slaic ,supstring,  //
+{
+  let coffee ="coffee kill "
+  console.log(coffee.slice(6,11))
+   console.log(coffee.slice(0,6))
+    console.log(coffee.substring(6,11))
+        console.log(coffee.substring(0,6))
+    
+}
+//includes//
+// جزء البحث عن Latta باستخدام includes()
+
+{
+  let coffeenames = ["clasic coffee ", "espresso", "captsheno", "latta"];
+  let price = [5, 4, 7, 9];
+  let search = "latta";
+
+  for (let i = 0; i < coffeenames.length; i++)
+
+    if (coffeenames[i].includes(search)) {
+      console.log(coffeenames[i], price[i]);
+    }
+}
+// جزء البحث باستخدام startsWith()
+// بنشوف هل اسم المنتج بيبدأ بالنص اللي موجود في search ولا لأ
+
+{
+  let coffeenames = ["clasic coffee", "espresso", "captsheno", "latta"];
+  let price = [5, 4, 7, 9];
+  let search = "clasic coffee";
+
+  for (let i = 0; i < coffeenames.length; i++) {
+
+    if (coffeenames[i].startsWith(search)) {
+      console.log(coffeenames[i], price[i]);
+    }
+  }
+}
+
+
+// جزء البحث باستخدام endsWith()
+// بنشوف هل اسم المنتج بينتهي بالنص اللي موجود في search ولا لأ
+
+{
+  let coffeenames = ["clasic coffee", "espresso", "captsheno", "latta"];
+  let price = [5, 4, 7, 9];
+  let search = "latta";
+
+  for (let i = 0; i < coffeenames.length; i++) {
+
+    if (coffeenames[i].endsWith(search)) {
+      console.log(coffeenames[i], price[i]);
+    }
+  }
+}
+//                                             ARRAY                                                                //
+{
+let coffeenames = ["coffee","latta", "capthsano","nescafa","tea","milk"]
+
+console.log(coffeenames.shift())
+
+
+console.log(coffeenames.unshift("black"))
+
+
+console.log(coffeenames.push("milk check"))
+
+
+console.log(coffeenames.pop())
+
+
+console.log(coffeenames.sort())
+
+
+console.log(coffeenames.reverse())
+
+
+console.log(coffeenames.slice(1,3))
+
+//حزف
+console.log(coffeenames.splice(0,1))
+
+//اضافه
+coffeenames.splice(1, 0, "mocha");
+console.log(coffeenames);
+
+
+
+console.log(coffeenames.join(" @ "))
+//cocat دمج 2
+console.log(coffeenames.concat("ahmed","mahmed"))
+}
+//                FUCTION                      //
+
+{
+  // السؤال: اكتب Function عادية تستقبلش أي بيانات، وتطبع رسالة ترحيب.
+
+  function welcome(){
+    console.log("welcome yosef")
+  }
+  welcome();
+}
+
+
+{
+  // السؤال: اكتب Function تستقبل اسم كـ Parameter، وتطبع رسالة ترحيب بالاسم.
+
+  function welcome(username){
+    console.log("hello"  + username)
+  }
+  welcome("yosef");
+}
+
+
+{
+  // السؤال: اكتب Function تستقبل العمر كـ Parameter، وتطبع العمر.
+
+  function showage(age){
+    console.log("your are is"  + age)
+  }
+  showage(20);
+}
+
+
+{
+  // السؤال: اكتب Function تستقبل اسم وعمر، وتطبع كل واحد منهم في سطر منفصل.
+
+  function personinfo(username,age){
+    console.log("name " +username )
+    console.log("age " +age )
+  }
+  personinfo("yossef" , 22);
+}
+
+
+{
+  // السؤال: اكتب Function تستقبل رقمين، وتجمعهما وتطبع الناتج.
+
+  function calculate( num1 ,num2){
+    console.log(num1  + num2  )
+  }
+  calculate(4,3);
+}
+
+
+{
+  // السؤال: اكتب Function تستقبل رقمين، وتضربهما باستخدام return، ثم خزّن الناتج في متغير واطبعه.
+
+  function multable( num1 , num2){
+    return num1 *num2
+
+  }
+  let result = multable(6,4)
+  console.log(result)
+}
+
+
+{
+  // السؤال: اكتب Function تستقبل السعر والخصم، وتستخدم return لإرجاع نتيجة العملية، ثم خزّن الناتج واطبعه.
+
+  function calculaterprice( price , descount){
+    return descount-price
+  }
+  let result = calculaterprice(100, 20)
+  console.log(result)
+}
+
+
+
+{
+  // السؤال: اكتب Function تستقبل رقمًا، إذا كان الرقم أكبر من أو يساوي 10 تطبع "Big Number"،
+  // وإذا كان أقل من 10 تطبع "Small Number".
+
+  function checknumper(age){
+    if(age>=10){
+      console.log("big numper")
+    }
+    else {
+      console.log("small numper")
+    }
+  }
+
+  checknumper(10)
+}
+
+
+{
+  // السؤال: اكتب Function تستخدم for وتطبع الأرقام الزوجية من 2 إلى 10.
+
+  function printevennumpers(){
+    for(let i = 2; i <= 10; i+=2){//i+=2   بتزود اتنين كل مره عشان تبقي زوجي
+      console.log(i)
+    }
+  }
+
+  printevennumpers()
+}
+
+
+
+
+
+
+// السؤال: اكتب Function اسمها showCoffees تستقبل Array فيها أسماء مشروبات،
+// وتطبع كل عنصر موجود داخل الـArray.
+{
+  function showcoffees(names){
+for(let i= 0; i<names.length;i++){
+console.log( names[i])
+}
+  }
+  let namecoffee = ["coffee", "latta", "captshno", " espreso" ]
+  showcoffees(namecoffee)
+}
+
+// السؤال: اكتب Function تستقبل اسمًا كنص،
+// وتتحقق هل الاسم يحتوي على الحرف "a" أم لا.
+// إذا كان موجودًا اطبع "Found"
+// وإذا لم يكن موجودًا اطبع "Not Found".
+{
+  function vcname(name){
+    if(name.includes("A")){
+      console.log("found")
+    }
+else{
+  console.log(" not " + " found ") 
+}
+  }
+  vcname("Ahmed")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ==================================================
+// المسألة الأولى - Map
+//
+// عندك Array من الأرقام.
+// اعمل Array جديدة بحيث تضاعف كل رقم.
+// ==================================================
+
+let numbers1 = [3, 6, 9, 12];
+
+let result = numbers1.map(function(element){
+return element+element;
+})
+console.log(result)
+
+// ==================================================
+// المسألة الثانية - Filter
+//
+// عندك Array من الأرقام.
+// احتفظ فقط بالأرقام الأكبر من 10.
+// ==================================================
+
+let numbers2 = [5, 15, 8, 20, 3, 17, 11];
+let result2 = numbers2.filter(function(element){
+return element > 10
+})
+console.log(result2)
+
+// ==================================================
+// المسألة الثالثة - Reduce
+//
+// عندك Array فيها أسعار منتجات.
+// احسب إجمالي الأسعار كلها.
+// ==================================================
+
+let prices = [35, 50, 25, 80, 40];
+let result3 = prices.reduce(function(acc,current){
+return acc+current;
+}, 0)
+console.log(result3)
+
+
+// ==================================================
+// المسألة الرابعة - Map + Filter + Reduce
+//
+// عندك Array من الأرقام.
+//
+// 1 - احتفظ فقط بالأرقام الزوجية.
+// 2 - اضرب كل رقم متبقي في 3.
+// 3 - اجمع كل النتائج في قيمة واحدة.
+//
+// استخدم التلاتة:
+// filter + map + reduce
+// ==================================================
+
+let numbers3 = [2, 5, 8, 10, 13, 16, 20];
+
+let result4 = numbers3.filter(function(element){
+return element % 2 === 0;
+})
+console.log(result4)
+
+
+let result5 = result4.map(function(element){
+return element*3
+})
+console.log(result5)
+
+
+
+
+let result6 = result5.reduce(function(acc,current){
+return acc+current;
+}, 0)
+console.log(result6)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  // ==================================================
+// المسألة الأولى
+//
+// أنشئ Object باسم user يحتوي على:
+// name = "Ahmed"
+// age = 21
+// country = "Egypt"
+//
+// وبعدها اطبع name و age و country.
+// ==================================================
+let user ={
+  name:"ahmed",
+  age :21,
+  country:"egypt",
+}
+console.log(user.name)
+console.log(user.age)
+console.log(user.country)
+
+// ==================================================
+// المسألة الثانية
+//
+// عندك المتغير:
+//
+// let property = "country";
+//
+// استخدمه للوصول إلى قيمة country من الـObject
+// بدون كتابة اسم الـProperty مباشرة.
+// ==================================================
+let property = "country";
+
+let vs ={
+  country:"egypt"
+}
+console.log(vs[property])
+// ==================================================
+// المسألة الثالثة
+//
+// أنشئ Object باسم person يحتوي على:
+//
+// name
+// skills = ["HTML", "CSS", "JS"]
+//
+// address يحتوي على:
+// city = "Cairo"
+// street = "Nile"
+//
+// وبعدها اطبع:
+// 1 - الاسم
+// 2 - الـJS من الـskills
+// 3 - المدينة
+// 4 - الشارع
+// ==================================================
+let person ={
+  name:"ahmed",
+  skills:["html","css" ,"js"],
+  address:{
+    city:"cairo",
+    street:"nile",
+  }
+}
+console.log(person.name)
+console.log(person.skills[2])
+console.log(person.address.city)
+console.log(person.address.street)
+// ==================================================
+// المسألة الرابعة
+//
+// أنشئ Object باستخدام new Object().
+//
+// الـ age في البداية يكون 20.
+//
+// بعد كده غيّر الـ age من 20 إلى 30.
+//
+// وأضف:
+// country = "Egypt"
+//
+// وأضف Method باسم sayHello
+// ترجع "Hello".
+//
+// وفي النهاية اطبع:
+// age
+// country
+// وناتج الـMethod.
+// ==================================================
+let fill = new Object({
+age:20,
+})
+console.log(fill.age)
+
+fill.age =30;
+fill["country"] ="egypt";
+fill.sayhallow=function () {
+  return 'hallow'
+}
+console.log(fill.age)
+console.log(fill["country"])
+console.log(fill.sayhallow())
+
+
+// ==================================================
+// المسألة الخامسة - اختبار شامل
+//
+// أنشئ Object باسم user يحتوي على:
+//
+// name = "Ahmed"
+// age = 20
+// skills = ["HTML", "CSS", "JS"]
+//
+// address يحتوي على:
+// country = "Egypt"
+// city = "Tanta"
+//
+// وبعدها:
+//
+// 1 - استخدم Dot Notation للوصول إلى الاسم.
+// 2 - استخدم Bracket Notation للوصول إلى age.
+// 3 - استخدم متغير اسمه key وقيمته "city"
+//    للوصول إلى المدينة.
+// 4 - اطبع JS من الـskills.
+// 5 - أضف Method باسم getInfo
+//    ترجع "Ahmed - Egypt" باستخدام بيانات الـObject.
+//
+// ==================================================
+
+
+
+// ==================================================
+//السوال  السادس - this و Window
+//
+// عندك Object اسمه user:
+//
+// age = 25
+//
+// و Method اسمها showAge ترجع:
+// this.age
+//
+// المطلوب:
+// 1 - اكتب الـObject.
+// 2 - شغّل الـMethod وخليها تطبع عمر المستخدم.
+// 3 - اعمل Function عادية ترجع this.
+// 4 - اختبر هل ناتج الـFunction العادية يساوي window أم لا.
+//
+// ==================================================
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+===========================
+     JavaScript Topics
+===========================
+
+
+JavaScript Basics
+
+- ✅ window.alert()
+- ✅ document.write()
+- ✅ console.log()
+- ✅ console.error()
+- ✅ console.table()
+- ✅ %c لتغيير لون النص في الـ Console
+- ✅ Variables
+- ✅ let / var
+- ✅ الفرق بين اسم المتغير وقيمة المتغير
+- ✅ typeof
+  - String
+  - Number
+  - Decimal Number
+  - Array
+  - Object
+  - Boolean
+  - Undefined
+  - Null
+- ✅ Escape Character
+- ✅ Escape Character + "\n"
+
+
+===========================
+          Number
+===========================
+
+- ✅ toString()
+- ✅ toFixed()
+- ✅ Number()
+- ✅ parseInt()
+- ✅ parseFloat()
+- ✅ Number.isInteger()
+- ✅ Number.isNaN()
+
+
+===========================
+           Math
+===========================
+
+- ✅ Math.round()
+- ✅ Math.ceil()
+- ✅ Math.floor()
+- ✅ Math.min()
+- ✅ Math.max()
+- ✅ Math.pow()
+- ✅ Math.random()
+- ✅ Math.trunc()
+
+
+===========================
+          String
+===========================
+
+- ✅ Index
+- ✅ charAt()
+- ✅ length
+- ✅ trim()
+- ✅ toUpperCase()
+- ✅ toLowerCase()
+- ✅ Chain
+- ✅ indexOf()
+- ✅ lastIndexOf()
+- ✅ repeat()
+- ✅ slice()
+- ✅ zfill()
+- ✅ substring()
+- ✅ substr()
+- ✅ includes()
+- ✅ startsWith()
+- ✅ endsWith()
+
+
+===========================
+   Comparison Operators
+===========================
+
+- ✅ Equal (==)
+- ✅ Not Equal (!=)
+- ✅ Identical (===)
+- ✅ Not Identical (!==)
+- ✅ Greater Than (>)
+- ✅ Less Than (<)
+- ✅ Greater Than Or Equal (>=)
+- ✅ Less Than Or Equal (<=)
+
+
+===========================
+     Logical Operators
+===========================
+
+- ✅ NOT (!)
+- ✅ AND (&&)
+- ✅ OR (||)
+
+
+===========================
+        Conditions
+===========================
+
+- ✅ Condition / true / false
+- ✅ if
+- ✅ else
+- ✅ else if
+
+
+===========================
+          Array
+===========================
+
+- ✅ shift()
+- ✅ push()
+- ✅ unshift()
+- ✅ pop()
+- ✅ indexOf()
+- ✅ lastIndexOf()
+- ✅ includes()
+- ✅ sort()
+- ✅ reverse()
+- ✅ slice()
+- ✅ splice()
+- ✅ join()
+- ✅ concat()
+
+
+
+
+===========================
+        Functions
+===========================
+
+- ✅ Function Declaration
+- ✅ Calling / Invoking Function
+- ✅ Parameters
+- ✅ Arguments
+- ✅ Multiple Parameters
+- ✅ Return
+- ✅ تخزين قيمة الـ return في متغير
+- ✅ استخدام if / else داخل Function
+- ✅ استخدام for داخل Function
+- ✅ استخدام Array داخل Function
+- ✅ التعامل مع Array Parameter
+- ✅ استخدام length داخل Function
+- ✅ استخدام includes() داخل Function
+- ✅ استخدام String Parameter
+- ✅ استخدام Number Parameter
+- ✅ استخدام أكثر من نوع بيانات كـ Parameters
+- ✅ تنفيذ عمليات حسابية داخل Function
+
+*/
+
+
+
+
+
+// جزء الـ Variables والـ console.log
+console.log("coffee house");
+
+let coffeename = "clasic coffee";
+let price = 5;
+
+console.log(coffeename);
+console.log(price);
+
+
+let coffeename2 = "espreso";
+let price2 = 4;
+
+console.log(coffeename2);
+console.log(price2);
+
+
+// جزء الـ Array + Loop + if / else if / else
+// وربط اسم المنتج بالسعر عن طريق الـ index
+
+{
+  let coffeenames = ["clasic coffee ", "espresso", "captsheno", "latta"];
+  let price = [5, 4, 7, 9];
+  let search = "coffee";
+
+  for (let i = 0; i < coffeenames.length; i++) {
+
+    if (coffeenames[i] === "espresso") {
+      console.log(coffeenames[i].toUpperCase(), price[i]);
+    }
+
+    else if (coffeenames[i] === "captsheno") {
+      console.log("found captsheno ".toLowerCase());
+    }
+
+    else {
+      console.log("not espresso & captsheno");
+    }
+  }
+}
+
+
+// جزء البحث داخل الـ Array باستخدام includes()
+// هنا بندور على كلمة coffee داخل أسماء المنتجات
+
+{
+  let coffeenames = ["clasic coffee ", "espresso", "captsheno", "latta"];
+  let price = [5, 4, 7, 9];
+  let search = "coffee";
+
+  for (let i = 0; i < coffeenames.length; i++)
+
+    if (coffeenames[i].includes(search)) {
+      console.log(coffeenames[i], price[i]);
+    }
+}
+
+
+// جزء البحث عن Espresso باستخدام includes()
+
+{
+  let coffeenames = ["clasic coffee ", "espresso", "captsheno", "latta"];
+  let price = [5, 4, 7, 9];
+  let search = "espresso";
+
+  for (let i = 0; i < coffeenames.length; i++)
+
+    if (coffeenames[i].includes(search)) {
+      console.log(coffeenames[i], price[i]);
+    }
+}
+
+
+// جزء البحث عن Captsheno باستخدام includes()
+
+{
+  let coffeenames = ["clasic coffee ", "espresso", "captsheno", "latta"];
+  let price = [5, 4, 7, 9];
+  let search = "captsheno";
+
+  for (let i = 0; i < coffeenames.length; i++)
+
+    if (coffeenames[i].includes(search)) {
+      console.log(coffeenames[i], price[i]);
+    }
+}
+
+
+
+
+
+
+//                numper                //
+
+//  TO STRING  //
+{
+  let price =5;
+  price.toString()
+  console.log(typeof price.toString()) //للتاكيز انو اتحول 
+}
+//  to fixed //
+{
+  let price =59.3443;
+ console.log(price.toFixed(2)) 
+}
+//  NUMPER //
+{
+  let price ="20"
+  console.log(Number(price))
+}
+// parseint //
+{
+  let price =40.9839298
+  console.log(parseInt(price))
+}
+// numper .intager  //
+{
+  let price = 65
+  console.log(Number.isInteger(price))
+}
+// numper . isnun  //
+{
+  let price = "ahmed"
+  console.log(Number.isNaN(Number(price)))
+}
+
+//                                MATH                       //
+//MATH ROUND//
+{
+  let price =4.6
+  console.log(Math.round(price))
+}
+//MATH CEILL//
+{
+  let price =4.6
+  console.log(Math.ceil(price))
+}
+//MATH FLOOR//
+{
+  let price =4.6
+  console.log(Math.floor(price))
+}
+// MATH MIN//
+{
+  let price = [5, 4, 7, 9];
+
+  console.log(Math.min(5,4,7,9));
+}
+// MATH MAX//
+{
+  let price = [5, 4, 7, 9];
+
+  console.log(Math.max(5,4,7,9));
+}
+// math pow //
+{
+  console.log(Math.pow(2,4))
+
+}
+// math random //
+{
+  console.log(Math.random())
+}
+//MATH TRUCKS //
+{
+  let price = 4.78
+  console.log(Math.trunc(price))
+}
+
+//                         STRING                 //
+//index//
+{
+let coffee ="coffee"
+console.log(coffee[0])
+console.log(coffee[1])
+console.log(coffee[2])
+console.log(coffee[3])
+console.log(coffee[4])
+console.log(coffee[5])
+}
+//lenght//
+{
+  let coffee ="coffee"
+  console.log(coffee.length)
+}
+//trim//
+{
+  let coffee ="  coffee  "
+  console.log(coffee.trim())
+}
+//to uppercase //
+{
+  let coffee ="coffee"
+  console.log(coffee.toUpperCase())
+}
+//to lowercase //
+{
+  let coffee ="coffee"
+  console.log(coffee.toLowerCase())
+}
+//chain//
+{ 
+  let coffee ="   coffee   "
+  console.log(coffee.trim() .toUpperCase())
+}
+//index of//
+{
+  let coffee ="coffee house"
+  console.log(coffee.indexOf("house"))
+  console.log(coffee.indexOf("h"))
+  console.log(coffee.indexOf("f"))
+}
+// last index of//
+{
+  let coffee ="coffee coffee"
+  console.log(coffee.lastIndexOf("coffee"))
+  
+}
+//repet//
+{
+  let coffee ="   coffee   "
+  console.log(coffee.repeat(2))
+}
+//slaic ,supstring,  //
+{
+  let coffee ="coffee kill "
+  console.log(coffee.slice(6,11))
+   console.log(coffee.slice(0,6))
+    console.log(coffee.substring(6,11))
+        console.log(coffee.substring(0,6))
+    
+}
+//includes//
+// جزء البحث عن Latta باستخدام includes()
+
+{
+  let coffeenames = ["clasic coffee ", "espresso", "captsheno", "latta"];
+  let price = [5, 4, 7, 9];
+  let search = "latta";
+
+  for (let i = 0; i < coffeenames.length; i++)
+
+    if (coffeenames[i].includes(search)) {
+      console.log(coffeenames[i], price[i]);
+    }
+}
+// جزء البحث باستخدام startsWith()
+// بنشوف هل اسم المنتج بيبدأ بالنص اللي موجود في search ولا لأ
+
+{
+  let coffeenames = ["clasic coffee", "espresso", "captsheno", "latta"];
+  let price = [5, 4, 7, 9];
+  let search = "clasic coffee";
+
+  for (let i = 0; i < coffeenames.length; i++) {
+
+    if (coffeenames[i].startsWith(search)) {
+      console.log(coffeenames[i], price[i]);
+    }
+  }
+}
+
+
+// جزء البحث باستخدام endsWith()
+// بنشوف هل اسم المنتج بينتهي بالنص اللي موجود في search ولا لأ
+
+{
+  let coffeenames = ["clasic coffee", "espresso", "captsheno", "latta"];
+  let price = [5, 4, 7, 9];
+  let search = "latta";
+
+  for (let i = 0; i < coffeenames.length; i++) {
+
+    if (coffeenames[i].endsWith(search)) {
+      console.log(coffeenames[i], price[i]);
+    }
+  }
+}
+//                                             ARRAY                                                                //
+{
+let coffeenames = ["coffee","latta", "capthsano","nescafa","tea","milk"]
+
+console.log(coffeenames.shift())
+
+
+console.log(coffeenames.unshift("black"))
+
+
+console.log(coffeenames.push("milk check"))
+
+
+console.log(coffeenames.pop())
+
+
+console.log(coffeenames.sort())
+
+
+console.log(coffeenames.reverse())
+
+
+console.log(coffeenames.slice(1,3))
+
+//حزف
+console.log(coffeenames.splice(0,1))
+
+//اضافه
+coffeenames.splice(1, 0, "mocha");
+console.log(coffeenames);
+
+
+
+console.log(coffeenames.join(" @ "))
+//cocat دمج 2
+console.log(coffeenames.concat("ahmed","mahmed"))
+}
+//                FUCTION                      //
+
+{
+  // السؤال: اكتب Function عادية تستقبلش أي بيانات، وتطبع رسالة ترحيب.
+
+  function welcome(){
+    console.log("welcome yosef")
+  }
+  welcome();
+}
+
+
+{
+  // السؤال: اكتب Function تستقبل اسم كـ Parameter، وتطبع رسالة ترحيب بالاسم.
+
+  function welcome(username){
+    console.log("hello"  + username)
+  }
+  welcome("yosef");
+}
+
+
+{
+  // السؤال: اكتب Function تستقبل العمر كـ Parameter، وتطبع العمر.
+
+  function showage(age){
+    console.log("your are is"  + age)
+  }
+  showage(20);
+}
+
+
+{
+  // السؤال: اكتب Function تستقبل اسم وعمر، وتطبع كل واحد منهم في سطر منفصل.
+
+  function personinfo(username,age){
+    console.log("name " +username )
+    console.log("age " +age )
+  }
+  personinfo("yossef" , 22);
+}
+
+
+{
+  // السؤال: اكتب Function تستقبل رقمين، وتجمعهما وتطبع الناتج.
+
+  function calculate( num1 ,num2){
+    console.log(num1  + num2  )
+  }
+  calculate(4,3);
+}
+
+
+{
+  // السؤال: اكتب Function تستقبل رقمين، وتضربهما باستخدام return، ثم خزّن الناتج في متغير واطبعه.
+
+  function multable( num1 , num2){
+    return num1 *num2
+
+  }
+  let result = multable(6,4)
+  console.log(result)
+}
+
+
+{
+  // السؤال: اكتب Function تستقبل السعر والخصم، وتستخدم return لإرجاع نتيجة العملية، ثم خزّن الناتج واطبعه.
+
+  function calculaterprice( price , descount){
+    return descount-price
+  }
+  let result = calculaterprice(100, 20)
+  console.log(result)
+}
+
+
+
+{
+  // السؤال: اكتب Function تستقبل رقمًا، إذا كان الرقم أكبر من أو يساوي 10 تطبع "Big Number"،
+  // وإذا كان أقل من 10 تطبع "Small Number".
+
+  function checknumper(age){
+    if(age>=10){
+      console.log("big numper")
+    }
+    else {
+      console.log("small numper")
+    }
+  }
+
+  checknumper(10)
+}
+
+
+{
+  // السؤال: اكتب Function تستخدم for وتطبع الأرقام الزوجية من 2 إلى 10.
+
+  function printevennumpers(){
+    for(let i = 2; i <= 10; i+=2){//i+=2   بتزود اتنين كل مره عشان تبقي زوجي
+      console.log(i)
+    }
+  }
+
+  printevennumpers()
+}
+
+
+
+
+
+
+// السؤال: اكتب Function اسمها showCoffees تستقبل Array فيها أسماء مشروبات،
+// وتطبع كل عنصر موجود داخل الـArray.
+{
+  function showcoffees(names){
+for(let i= 0; i<names.length;i++){
+console.log( names[i])
+}
+  }
+  let namecoffee = ["coffee", "latta", "captshno", " espreso" ]
+  showcoffees(namecoffee)
+}
+
+// السؤال: اكتب Function تستقبل اسمًا كنص،
+// وتتحقق هل الاسم يحتوي على الحرف "a" أم لا.
+// إذا كان موجودًا اطبع "Found"
+// وإذا لم يكن موجودًا اطبع "Not Found".
+{
+  function vcname(name){
+    if(name.includes("A")){
+      console.log("found")
+    }
+else{
+  console.log(" not " + " found ") 
+}
+  }
+  vcname("Ahmed")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ==================================================
+// المسألة الأولى - Map
+//
+// عندك Array من الأرقام.
+// اعمل Array جديدة بحيث تضاعف كل رقم.
+// ==================================================
+
+let numbers1 = [3, 6, 9, 12];
+
+let result = numbers1.map(function(element){
+return element+element;
+})
+console.log(result)
+
+// ==================================================
+// المسألة الثانية - Filter
+//
+// عندك Array من الأرقام.
+// احتفظ فقط بالأرقام الأكبر من 10.
+// ==================================================
+
+let numbers2 = [5, 15, 8, 20, 3, 17, 11];
+let result2 = numbers2.filter(function(element){
+return element > 10
+})
+console.log(result2)
+
+// ==================================================
+// المسألة الثالثة - Reduce
+//
+// عندك Array فيها أسعار منتجات.
+// احسب إجمالي الأسعار كلها.
+// ==================================================
+
+let prices = [35, 50, 25, 80, 40];
+let result3 = prices.reduce(function(acc,current){
+return acc+current;
+}, 0)
+console.log(result3)
+
+
+// ==================================================
+// المسألة الرابعة - Map + Filter + Reduce
+//
+// عندك Array من الأرقام.
+//
+// 1 - احتفظ فقط بالأرقام الزوجية.
+// 2 - اضرب كل رقم متبقي في 3.
+// 3 - اجمع كل النتائج في قيمة واحدة.
+//
+// استخدم التلاتة:
+// filter + map + reduce
+// ==================================================
+
+let numbers3 = [2, 5, 8, 10, 13, 16, 20];
+
+let result4 = numbers3.filter(function(element){
+return element % 2 === 0;
+})
+console.log(result4)
+
+
+let result5 = result4.map(function(element){
+return element*3
+})
+console.log(result5)
+
+
+
+
+let result6 = result5.reduce(function(acc,current){
+return acc+current;
+}, 0)
+console.log(result6)
