@@ -7,7 +7,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Shopping Cart | STYLE STORE</title>
+    <title>Cart | STYLE STORE</title>
 
     <link rel="stylesheet" href="css/master.css">
 
@@ -17,282 +17,832 @@
 <body>
 
 
-<!-- ==================================================
-     NAVBAR / شريط التنقل
-================================================== -->
-
 <header class="navbar">
 
     <a href="index.html" class="logo">
         STYLE STORE
     </a>
 
+
     <nav>
 
-        <a href="women.html">Women</a>
+        <a href="index.html">Home</a>
 
         <a href="men.html">Men</a>
+
+        <a href="women.html">Women</a>
 
         <a href="kids.html">Kids</a>
 
         <a href="men-jeans.html">Jeans</a>
 
+    </nav>
+
+
+    <div class="header-actions">
+
         <a href="cart.html">Cart</a>
 
-    </nav>
+    </div>
 
 </header>
 
 
 
-<!-- ==================================================
-     SHOPPING CART / عربة التسوق
-================================================== -->
-
-<main class="cart-page">
+<main class="checkout-page">
 
 
-    <!-- CART TITLE -->
+    <section class="checkout-header">
 
-    <div class="cart-heading">
+        <span>STYLE STORE CHECKOUT</span>
 
-        <p>STYLE STORE</p>
+        <h1>Your Shopping Cart</h1>
 
-        <h1>Shopping Cart</h1>
+        <p>
+            Review your items, enter your shipping information,
+            choose your delivery method, and complete your order.
+        </p>
 
-        <span>Review your selected products</span>
-
-    </div>
+    </section>
 
 
 
-    <!-- ==================================================
-         CART CONTENT / محتوى العربة
-    ================================================== -->
-
-    <div class="cart-layout">
+    <section class="checkout-layout">
 
 
-        <!-- ==================================================
-             CART PRODUCTS / المنتجات
-        ================================================== -->
-
-        <section class="cart-products">
+        <div class="checkout-main">
 
 
-            <!-- PRODUCT 1 -->
 
-            <div class="cart-product">
+            <section class="cart-section">
 
-                <img
-                    src="https://images.unsplash.com/photo-1542272604-787c3835535d"
-                    alt="Classic Blue Jeans"
-                >
+                <div class="section-heading">
 
-                <div class="cart-product-info">
+                    <span>01</span>
 
-                    <h2>Classic Blue Jeans</h2>
+                    <div>
 
-                    <p class="cart-category">
-                        Men's Jeans
-                    </p>
+                        <h2>Shopping Cart</h2>
 
-                    <div class="product-details">
-
-                        <p>
-                            <strong>Size:</strong> M
-                        </p>
-
-                        <p>
-                            <strong>Color:</strong> Blue
-                        </p>
-
-                    </div>
-
-                    <span class="cart-product-price">
-                        899 EGP
-                    </span>
-
-                    <div class="cart-actions">
-
-                        <a href="men-jeans.html">
-                            Remove
-                        </a>
-
-                        <a href="index.html">
-                            Save for later
-                        </a>
+                        <p>Review the products you selected.</p>
 
                     </div>
 
                 </div>
 
 
-                <!-- QUANTITY -->
 
-                <div class="cart-quantity">
+                <div class="cart-item">
 
-                    <span>Quantity</span>
 
-                    <div class="quantity-box">
+                    <div class="cart-item-image">
 
-                        <span>-</span>
-
-                        <strong>1</strong>
-
-                        <span>+</span>
+                        <img
+                            src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80"
+                            alt="Classic T-Shirt"
+                        >
 
                     </div>
 
-                </div>
 
-            </div>
+                    <div class="cart-item-info">
 
+                        <span>NEW COLLECTION</span>
 
-
-            <!-- PRODUCT 2 -->
-
-            <div class="cart-product">
-
-                <img
-                    src="https://images.unsplash.com/photo-1603252110481-7ba873bf42ab"
-                    alt="Black Jeans"
-                >
-
-                <div class="cart-product-info">
-
-                    <h2>Black Slim Jeans</h2>
-
-                    <p class="cart-category">
-                        Men's Jeans
-                    </p>
-
-                    <div class="product-details">
+                        <h3>Classic T-Shirt</h3>
 
                         <p>
-                            <strong>Size:</strong> L
+                            Premium casual T-shirt designed for
+                            everyday comfort and modern style.
                         </p>
+
+                        <div class="product-details">
+
+                            <span>Color: Black</span>
+
+                            <span>Size: M</span>
+
+                            <span>Quantity: 1</span>
+
+                        </div>
+
+                        <strong>$35.00</strong>
+
+                    </div>
+
+
+                    <div class="cart-item-actions">
+
+                        <button>−</button>
+
+                        <span>1</span>
+
+                        <button>+</button>
+
+                        <a href="#">Remove</a>
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <section class="customer-section">
+
+                <div class="section-heading">
+
+                    <span>02</span>
+
+                    <div>
+
+                        <h2>Shipping Information</h2>
+
+                        <p>Enter the information required for delivery.</p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="form-grid">
+
+
+                    <div class="form-group">
+
+                        <label for="first-name">
+                            First Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="first-name"
+                            placeholder="Enter your first name"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="last-name">
+                            Last Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="last-name"
+                            placeholder="Enter your last name"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter your phone number"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email address"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="governorate">
+                            Governorate
+                        </label>
+
+                        <select id="governorate">
+
+                            <option>Select Governorate</option>
+
+                            <option>Cairo</option>
+
+                            <option>Giza</option>
+
+                            <option>Alexandria</option>
+
+                            <option>Gharbia</option>
+
+                            <option>Dakahlia</option>
+
+                            <option>Sharqia</option>
+
+                            <option>Qalyubia</option>
+
+                            <option>Monufia</option>
+
+                            <option>Beheira</option>
+
+                            <option>Kafr El Sheikh</option>
+
+                            <option>Other</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="city">
+                            City
+                        </label>
+
+                        <input
+                            type="text"
+                            id="city"
+                            placeholder="Enter your city"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group full-width">
+
+                        <label for="address">
+                            Full Address
+                        </label>
+
+                        <input
+                            type="text"
+                            id="address"
+                            placeholder="Street, building number, apartment..."
+                        >
+
+                    </div>
+
+
+                    <div class="form-group full-width">
+
+                        <label for="notes">
+                            Delivery Notes
+                        </label>
+
+                        <textarea
+                            id="notes"
+                            placeholder="Any additional instructions for the delivery..."
+                        ></textarea>
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <section class="delivery-section">
+
+                <div class="section-heading">
+
+                    <span>03</span>
+
+                    <div>
+
+                        <h2>Delivery Method</h2>
+
+                        <p>Choose the delivery option that suits you.</p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="delivery-options">
+
+
+                    <label class="delivery-card">
+
+                        <input
+                            type="radio"
+                            name="delivery"
+                        >
+
+                        <div>
+
+                            <h3>Standard Delivery</h3>
+
+                            <p>
+                                Delivery within 3–5 business days.
+                            </p>
+
+                            <strong>$5.00</strong>
+
+                        </div>
+
+                    </label>
+
+
+                    <label class="delivery-card">
+
+                        <input
+                            type="radio"
+                            name="delivery"
+                        >
+
+                        <div>
+
+                            <h3>Express Delivery</h3>
+
+                            <p>
+                                Faster delivery within 1–2 business days.
+                            </p>
+
+                            <strong>$10.00</strong>
+
+                        </div>
+
+                    </label>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <section class="payment-section">
+
+                <div class="section-heading">
+
+                    <span>04</span>
+
+                    <div>
+
+                        <h2>Payment Method</h2>
+
+                        <p>Select your preferred payment method.</p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="payment-options">
+
+
+                    <label class="payment-card">
+
+                        <input
+                            type="radio"
+                            name="payment"
+                        >
+
+                        <div>
+
+                            <h3>Cash on Delivery</h3>
+
+                            <p>
+                                Pay when your order arrives at your door.
+                            </p>
+
+                        </div>
+
+                    </label>
+
+
+                    <label class="payment-card">
+
+                        <input
+                            type="radio"
+                            name="payment"
+                        >
+
+                        <div>
+
+                            <h3>Credit / Debit Card</h3>
+
+                            <p>
+                                Pay securely using your bank card.
+                            </p>
+
+                        </div>
+
+                    </label>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <section class="promo-section">
+
+                <div class="section-heading">
+
+                    <span>05</span>
+
+                    <div>
+
+                        <h2>Promo Code</h2>
+
+                        <p>Have a discount code?</p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="promo-box">
+
+                    <input
+                        type="text"
+                        placeholder="Enter promo code"
+                    >
+
+                    <button>
+                        Apply Code
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <section class="trust-section">
+
+                <div class="section-heading">
+
+                    <span>06</span>
+
+                    <div>
+
+                        <h2>Why Shop With STYLE STORE?</h2>
 
                         <p>
-                            <strong>Color:</strong> Black
+                            Everything you need for a comfortable shopping experience.
                         </p>
 
                     </div>
 
-                    <span class="cart-product-price">
-                        799 EGP
-                    </span>
+                </div>
 
-                    <div class="cart-actions">
 
-                        <a href="men-jeans.html">
-                            Remove
-                        </a>
 
-                        <a href="index.html">
-                            Save for later
-                        </a>
+                <div class="trust-grid">
+
+
+                    <div class="trust-card">
+
+                        <h3>Secure Shopping</h3>
+
+                        <p>
+                            Your shopping experience is designed
+                            with security and privacy in mind.
+                        </p>
+
+                    </div>
+
+
+                    <div class="trust-card">
+
+                        <h3>Quality Products</h3>
+
+                        <p>
+                            Carefully selected fashion pieces
+                            for modern everyday style.
+                        </p>
+
+                    </div>
+
+
+                    <div class="trust-card">
+
+                        <h3>Fast Delivery</h3>
+
+                        <p>
+                            Reliable delivery options designed
+                            to get your order to you quickly.
+                        </p>
+
+                    </div>
+
+
+                    <div class="trust-card">
+
+                        <h3>Easy Returns</h3>
+
+                        <p>
+                            Simple return policies designed
+                            to make shopping easier.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <section class="faq-section">
+
+                <div class="section-heading">
+
+                    <span>07</span>
+
+                    <div>
+
+                        <h2>Frequently Asked Questions</h2>
+
+                        <p>
+                            Find answers to common questions about your order.
+                        </p>
 
                     </div>
 
                 </div>
 
 
-                <!-- QUANTITY -->
 
-                <div class="cart-quantity">
+                <div class="faq-list">
 
-                    <span>Quantity</span>
 
-                    <div class="quantity-box">
+                    <div class="faq-item">
 
-                        <span>-</span>
+                        <h3>
+                            How long does delivery take?
+                        </h3>
 
-                        <strong>1</strong>
-
-                        <span>+</span>
+                        <p>
+                            Standard delivery usually takes 3–5 business days,
+                            while express delivery takes approximately 1–2 business days.
+                        </p>
 
                     </div>
 
+
+                    <div class="faq-item">
+
+                        <h3>
+                            Can I change my order?
+                        </h3>
+
+                        <p>
+                            Order changes depend on the order status and
+                            whether the order has already been shipped.
+                        </p>
+
+                    </div>
+
+
+                    <div class="faq-item">
+
+                        <h3>
+                            Can I return an item?
+                        </h3>
+
+                        <p>
+                            Eligible products can be returned according
+                            to the store's return policy.
+                        </p>
+
+                    </div>
+
+
+                    <div class="faq-item">
+
+                        <h3>
+                            How can I contact customer support?
+                        </h3>
+
+                        <p>
+                            You can contact STYLE STORE customer support
+                            for assistance with your order.
+                        </p>
+
+                    </div>
+
+
                 </div>
 
-            </div>
-
-        </section>
+            </section>
 
 
 
-        <!-- ==================================================
-             ORDER SUMMARY / ملخص الطلب
-        ================================================== -->
+        </div>
+
+
 
         <aside class="order-summary">
 
-            <h2>Order Summary</h2>
 
+            <div class="summary-header">
 
-            <!-- SUBTOTAL -->
+                <span>YOUR ORDER</span>
 
-            <div class="summary-row">
-
-                <span>Subtotal</span>
-
-                <strong>1,698 EGP</strong>
+                <h2>Order Summary</h2>
 
             </div>
 
 
-            <!-- SHIPPING -->
 
-            <div class="summary-row">
+            <div class="summary-product">
 
-                <span>Shipping</span>
+                <div>
 
-                <strong>50 EGP</strong>
+                    <strong>Classic T-Shirt</strong>
 
-            </div>
+                    <span>Black / M / ×1</span>
 
+                </div>
 
-            <!-- DISCOUNT -->
-
-            <div class="summary-row discount">
-
-                <span>Discount</span>
-
-                <strong>0 EGP</strong>
+                <strong>$35.00</strong>
 
             </div>
 
 
-            <!-- TOTAL -->
+
+            <div class="summary-lines">
+
+                <div>
+
+                    <span>Subtotal</span>
+
+                    <strong>$35.00</strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>Shipping</span>
+
+                    <strong>$5.00</strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>Discount</span>
+
+                    <strong>$0.00</strong>
+
+                </div>
+
+            </div>
+
+
 
             <div class="summary-total">
 
                 <span>Total</span>
 
-                <strong>1,748 EGP</strong>
+                <strong>$40.00</strong>
 
             </div>
 
 
-            <!-- CHECKOUT -->
 
-            <a href="#" class="checkout-button">
-                Checkout
-            </a>
+            <div class="secure-payment">
+
+                <h3>Secure Checkout</h3>
+
+                <p>
+                    Your order information is handled
+                    through a secure checkout experience.
+                </p>
+
+            </div>
 
 
-            <!-- CONTINUE SHOPPING -->
 
-            <a href="men-jeans.html" class="continue-shopping">
-                Continue Shopping
-            </a>
+            <button class="place-order">
+                Place Order
+            </button>
+
+
+
+            <p class="terms">
+                By placing your order, you agree to our
+                terms, privacy policy, shipping policy,
+                and return policy.
+            </p>
+
 
         </aside>
 
-    </div>
+
+    </section>
+
 
 </main>
+
+
+
+<footer class="footer">
+
+
+    <div class="footer-content">
+
+
+        <div class="footer-brand">
+
+            <h2>STYLE STORE</h2>
+
+            <p>
+                Modern fashion for every style,
+                every day, and every occasion.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>Shop</h3>
+
+            <a href="men.html">Men</a>
+
+            <a href="women.html">Women</a>
+
+            <a href="kids.html">Kids</a>
+
+            <a href="men-jeans.html">Jeans</a>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>Customer Care</h3>
+
+            <a href="#">Contact Us</a>
+
+            <a href="#">Shipping</a>
+
+            <a href="#">Returns</a>
+
+            <a href="#">FAQ</a>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>Information</h3>
+
+            <a href="#">Privacy Policy</a>
+
+            <a href="#">Terms & Conditions</a>
+
+            <a href="#">Payment Methods</a>
+
+            <a href="#">About STYLE STORE</a>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 STYLE STORE. All Rights Reserved.
+        </p>
+
+    </div>
+
+
+</footer>
 
 
 </body>

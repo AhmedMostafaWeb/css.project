@@ -1,124 +1,218 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
 
-<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset="UTF-8">
+<title>Checkout | STYLE STORE</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/master.css">
 
-    <title>Checkout | STYLE STORE</title>
+</head><body><!-- ==================================================
+     CHECKOUT HEADER — رأس صفحة الدفع
+================================================== --><header class="navbar"><a href="index.html" class="logo">
+    STYLE STORE
+</a>
 
-    <link rel="stylesheet" href="css/master.css">
+<nav>
 
-</head>
+    <a href="index.html">Home</a>
 
+    <a href="men-jeans.html">Men</a>
 
-<body>
+    <a href="#">Women</a>
 
+    <a href="#">Kids</a>
 
-<header class="navbar">
+    <a href="cart.html">Cart 🛒</a>
 
-    <a href="index.html" class="logo">
-        STYLE STORE
-    </a>
+</nav>
 
+</header><main><!-- ==================================================
+     CHECKOUT PAGE — صفحة الدفع
+================================================== --><section class="checkout-page"><!-- CHECKOUT HERO — عنوان الصفحة -->
 
-    <nav>
+<div class="checkout-hero">
 
-        <a href="index.html">Home</a>
+    <div class="checkout-heading">
 
-        <a href="men-jeans.html">Men</a>
+        <p>STYLE STORE</p>
 
-        <a href="#">Women</a>
+        <h1>Complete Your Order</h1>
 
-        <a href="#">Kids</a>
+        <span>
+            Secure checkout • Fast delivery • Easy returns
+        </span>
 
-        <a href="cart.html">Cart 🛒</a>
-
-    </nav>
-
-</header>
-
-
-
-<main>
-
-
-    <section class="checkout-page">
+    </div>
 
 
-        <div class="cart-heading">
+    <!-- CHECKOUT STEPS — خطوات الطلب -->
 
-            <p>STYLE STORE</p>
+    <div class="checkout-steps">
 
-            <h1>Checkout</h1>
+        <div class="checkout-step active">
+
+            <span>01</span>
+
+            <p>Cart</p>
 
         </div>
 
 
-
-        <div class="checkout-container">
-
-
-            <!-- CUSTOMER INFORMATION -->
-
-            <div class="customer-info">
+        <div class="step-line"></div>
 
 
-                <h2>Customer Information</h2>
+        <div class="checkout-step active">
+
+            <span>02</span>
+
+            <p>Checkout</p>
+
+        </div>
 
 
-                <form>
+        <div class="step-line"></div>
 
 
-                    <label for="name">
-                        Full Name
-                    </label>
+        <div class="checkout-step">
 
-                    <input
-                        type="text"
-                        id="name"
-                        placeholder="Enter your full name"
-                    >
+            <span>03</span>
 
+            <p>Confirmation</p>
 
+        </div>
 
-                    <label for="phone">
-                        Phone Number
-                    </label>
+    </div>
 
-                    <input
-                        type="tel"
-                        id="phone"
-                        placeholder="Enter your phone number"
-                    >
+</div>
 
 
+<!-- ==================================================
+     MAIN CHECKOUT LAYOUT — تقسيمة صفحة الدفع
+================================================== -->
 
-                    <label for="email">
-                        Email
-                    </label>
-
-                    <input
-                        type="email"
-                        id="email"
-                        placeholder="Enter your email"
-                    >
+<div class="checkout-container">
 
 
+    <!-- ==================================================
+         LEFT SIDE — بيانات العميل
+    ================================================== -->
+
+    <div class="checkout-left">
+
+
+        <!-- CUSTOMER INFORMATION -->
+
+        <section class="checkout-section">
+
+            <div class="section-heading">
+
+                <span>01</span>
+
+                <div>
+
+                    <p>YOUR DETAILS</p>
+
+                    <h2>Customer Information</h2>
+
+                </div>
+
+            </div>
+
+
+            <form>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your full name"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter your phone number"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group full-width">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email address"
+                        >
+
+                    </div>
+
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <!-- ==================================================
+             SHIPPING ADDRESS — عنوان الشحن
+        ================================================== -->
+
+        <section class="checkout-section">
+
+            <div class="section-heading">
+
+                <span>02</span>
+
+                <div>
+
+                    <p>DELIVERY ADDRESS</p>
+
+                    <h2>Shipping Information</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-grid">
+
+                <div class="form-group full-width">
 
                     <label for="address">
-                        Address
+                        Street Address
                     </label>
 
                     <input
                         type="text"
                         id="address"
-                        placeholder="Enter your address"
+                        placeholder="House number, street name"
                     >
 
+                </div>
 
+
+                <div class="form-group">
 
                     <label for="city">
                         City
@@ -130,45 +224,207 @@
                         placeholder="Enter your city"
                     >
 
+                </div>
 
 
-                    <h2>
-                        Payment Method
-                    </h2>
+                <div class="form-group">
 
-
-
-                    <label class="payment-option">
-
-                        <input
-                            type="radio"
-                            name="payment"
-                            value="cash"
-                            checked
-                        >
-
-                        Cash on Delivery
-
+                    <label for="country">
+                        Country
                     </label>
 
+                    <select id="country">
+
+                        <option>Egypt</option>
+
+                        <option>Saudi Arabia</option>
+
+                        <option>United Arab Emirates</option>
+
+                        <option>Kuwait</option>
+
+                    </select>
+
+                </div>
 
 
-                    <label class="payment-option">
+                <div class="form-group full-width">
 
-                        <input
-                            type="radio"
-                            name="payment"
-                            value="card"
-                        >
-
-                        Credit / Debit Card
-
+                    <label for="notes">
+                        Delivery Notes
                     </label>
 
+                    <textarea
+                        id="notes"
+                        placeholder="Add any special delivery instructions..."
+                    ></textarea>
+
+                </div>
+
+            </div>
+
+        </section>
 
 
-                    <div class="card-info">
+        <!-- ==================================================
+             DELIVERY OPTIONS — طرق التوصيل
+        ================================================== -->
 
+        <section class="checkout-section">
+
+            <div class="section-heading">
+
+                <span>03</span>
+
+                <div>
+
+                    <p>DELIVERY METHOD</p>
+
+                    <h2>Choose Your Delivery</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="delivery-options">
+
+                <label class="delivery-card">
+
+                    <input
+                        type="radio"
+                        name="delivery"
+                        checked
+                    >
+
+                    <div class="delivery-content">
+
+                        <div>
+
+                            <h3>Standard Delivery</h3>
+
+                            <p>
+                                Delivery within 3–5 business days
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            EGP 100
+                        </strong>
+
+                    </div>
+
+                </label>
+
+
+                <label class="delivery-card">
+
+                    <input
+                        type="radio"
+                        name="delivery"
+                    >
+
+                    <div class="delivery-content">
+
+                        <div>
+
+                            <h3>Express Delivery</h3>
+
+                            <p>
+                                Faster delivery within 1–2 business days
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            EGP 180
+                        </strong>
+
+                    </div>
+
+                </label>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             PAYMENT — الدفع
+        ================================================== -->
+
+        <section class="checkout-section">
+
+            <div class="section-heading">
+
+                <span>04</span>
+
+                <div>
+
+                    <p>PAYMENT METHOD</p>
+
+                    <h2>Choose Payment</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="payment-options">
+
+                <label class="payment-card">
+
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="cash"
+                        checked
+                    >
+
+                    <div>
+
+                        <h3>Cash on Delivery</h3>
+
+                        <p>
+                            Pay when your order arrives.
+                        </p>
+
+                    </div>
+
+                </label>
+
+
+                <label class="payment-card">
+
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="card"
+                    >
+
+                    <div>
+
+                        <h3>Credit / Debit Card</h3>
+
+                        <p>
+                            Secure payment using your bank card.
+                        </p>
+
+                    </div>
+
+                </label>
+
+            </div>
+
+
+            <!-- CARD INFORMATION -->
+
+            <div class="card-info">
+
+                <div class="form-grid">
+
+                    <div class="form-group full-width">
 
                         <label for="card-number">
                             Card Number
@@ -180,7 +436,10 @@
                             placeholder="1234 5678 9012 3456"
                         >
 
+                    </div>
 
+
+                    <div class="form-group">
 
                         <label for="card-name">
                             Cardholder Name
@@ -192,7 +451,10 @@
                             placeholder="Name on card"
                         >
 
+                    </div>
 
+
+                    <div class="form-group">
 
                         <label for="expiry">
                             Expiry Date
@@ -201,10 +463,13 @@
                         <input
                             type="text"
                             id="expiry"
-                            placeholder="MM/YY"
+                            placeholder="MM / YY"
                         >
 
+                    </div>
 
+
+                    <div class="form-group">
 
                         <label for="cvv">
                             CVV
@@ -216,129 +481,406 @@
                             placeholder="123"
                         >
 
-
                     </div>
 
+                </div>
+
+            </div>
+
+        </section>
 
 
-                    <button type="submit">
-                        Place Order
-                    </button>
+        <!-- ==================================================
+             PROMO CODE — كود الخصم
+        ================================================== -->
 
+        <section class="checkout-section promo-section">
 
-                </form>
+            <div class="section-heading">
 
+                <span>05</span>
+
+                <div>
+
+                    <p>SPECIAL OFFER</p>
+
+                    <h2>Have a Promo Code?</h2>
+
+                </div>
 
             </div>
 
 
+            <div class="promo-box">
 
-            <!-- ORDER SUMMARY -->
+                <input
+                    type="text"
+                    placeholder="Enter promo code"
+                >
 
-            <aside class="order-summary">
+                <button type="button">
+                    Apply Code
+                </button>
+
+            </div>
+
+        </section>
 
 
-                <h2>
-                    Order Summary
-                </h2>
+        <!-- ==================================================
+             TRUST FEATURES — مميزات المتجر
+        ================================================== -->
 
+        <section class="checkout-trust">
 
+            <div class="trust-item">
 
-                <div class="summary-item">
+                <span>✓</span>
+
+                <div>
+
+                    <h3>Secure Checkout</h3>
 
                     <p>
-                        Product
+                        Your information is protected.
                     </p>
-
-                    <span>
-                        Slim Fit Blue Jeans
-                    </span>
 
                 </div>
 
+            </div>
 
 
-                <div class="summary-item">
+            <div class="trust-item">
+
+                <span>↻</span>
+
+                <div>
+
+                    <h3>Easy Returns</h3>
 
                     <p>
-                        Size
+                        Simple and convenient returns.
                     </p>
-
-                    <span>
-                        M
-                    </span>
 
                 </div>
 
+            </div>
 
 
-                <div class="summary-item">
+            <div class="trust-item">
+
+                <span>◆</span>
+
+                <div>
+
+                    <h3>Premium Quality</h3>
 
                     <p>
-                        Quantity
+                        Carefully selected fashion pieces.
                     </p>
-
-                    <span>
-                        1
-                    </span>
 
                 </div>
 
+            </div>
+
+        </section>
 
 
-                <div class="summary-item">
-
-                    <p>
-                        Price
-                    </p>
-
-                    <span>
-                        EGP 1,850
-                    </span>
-
-                </div>
+    </div>
 
 
+    <!-- ==================================================
+         RIGHT SIDE — ملخص الطلب
+    ================================================== -->
 
-                <div class="summary-item">
+    <aside class="order-summary">
 
-                    <p>
-                        Shipping
-                    </p>
+        <div class="summary-header">
 
-                    <span>
-                        EGP 100
-                    </span>
+            <p>YOUR ORDER</p>
 
-                </div>
-
-
-
-                <div class="summary-total">
-
-                    <p>
-                        Total
-                    </p>
-
-                    <span>
-                        EGP 1,950
-                    </span>
-
-                </div>
-
-
-            </aside>
-
+            <h2>Order Summary</h2>
 
         </div>
 
 
-    </section>
+        <!-- PRODUCT -->
+
+        <div class="summary-product">
+
+            <div class="product-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1542272604-787c3835535d"
+                    alt="Slim Fit Blue Jeans"
+                >
+
+            </div>
 
 
-</main>
+            <div class="product-info">
+
+                <span>
+                    MEN'S COLLECTION
+                </span>
+
+                <h3>
+                    Slim Fit Blue Jeans
+                </h3>
+
+                <p>
+                    Size: M
+                </p>
+
+                <p>
+                    Quantity: 1
+                </p>
+
+                <strong>
+                    EGP 1,850
+                </strong>
+
+            </div>
+
+        </div>
 
 
-</body>
+        <!-- ORDER CALCULATIONS -->
 
-</html>
+        <div class="summary-details">
+
+            <div class="summary-row">
+
+                <p>
+                    Subtotal
+                </p>
+
+                <span>
+                    EGP 1,850
+                </span>
+
+            </div>
+
+
+            <div class="summary-row">
+
+                <p>
+                    Shipping
+                </p>
+
+                <span>
+                    EGP 100
+                </span>
+
+            </div>
+
+
+            <div class="summary-row discount">
+
+                <p>
+                    Discount
+                </p>
+
+                <span>
+                    - EGP 0
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- TOTAL -->
+
+        <div class="summary-total">
+
+            <div>
+
+                <p>
+                    Total
+                </p>
+
+                <span>
+                    Including shipping
+                </span>
+
+            </div>
+
+            <strong>
+                EGP 1,950
+            </strong>
+
+        </div>
+
+
+        <!-- PLACE ORDER -->
+
+        <button
+            type="submit"
+            class="place-order-button"
+        >
+            Place Order
+        </button>
+
+
+        <div class="secure-payment">
+
+            <span>🔒</span>
+
+            <div>
+
+                <strong>
+                    Secure Payment
+                </strong>
+
+                <p>
+                    Your payment information is encrypted
+                    and protected.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ORDER BENEFITS -->
+
+        <div class="order-benefits">
+
+            <div>
+
+                <span>✓</span>
+
+                <p>
+                    Free support with every order
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <span>✓</span>
+
+                <p>
+                    Easy returns and exchanges
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <span>✓</span>
+
+                <p>
+                    Carefully packed with care
+                </p>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+</div>
+
+
+<!-- ==================================================
+     FAQ — الأسئلة الشائعة
+================================================== -->
+
+<section class="checkout-faq">
+
+    <div class="faq-heading">
+
+        <p>NEED HELP?</p>
+
+        <h2>Checkout FAQ</h2>
+
+    </div>
+
+
+    <div class="faq-grid">
+
+        <div class="faq-card">
+
+            <h3>
+                How long will my order take?
+            </h3>
+
+            <p>
+                Standard orders usually arrive within
+                3–5 business days.
+            </p>
+
+        </div>
+
+
+        <div class="faq-card">
+
+            <h3>
+                Can I return my order?
+            </h3>
+
+            <p>
+                Yes. Eligible items can be returned
+                according to our return policy.
+            </p>
+
+        </div>
+
+
+        <div class="faq-card">
+
+            <h3>
+                Is my payment secure?
+            </h3>
+
+            <p>
+                Yes. We take your privacy and payment
+                security seriously.
+            </p>
+
+        </div>
+
+
+        <div class="faq-card">
+
+            <h3>
+                Need more help?
+            </h3>
+
+            <p>
+                Our customer support team is ready
+                to help you with your order.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     FINAL MESSAGE — الرسالة الأخيرة
+================================================== -->
+
+<section class="checkout-message">
+
+    <p>
+        THANK YOU FOR CHOOSING STYLE STORE
+    </p>
+
+    <h2>
+        Your Style. Your Confidence.
+    </h2>
+
+    <span>
+        Premium fashion designed for everyday life.
+    </span>
+
+</section>
+
+</section></main></body></html>
