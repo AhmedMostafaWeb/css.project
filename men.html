@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -19,6 +20,11 @@
 
 <header class="navbar">
 
+<a href="wishlist.html" class="wishlist-link">
+    <span class="wishlist-heart">♡</span>
+    <span>Wishlist</span>
+</a>
+
     <a href="index.html" class="logo">
         STYLE STORE
     </a>
@@ -37,6 +43,65 @@
         <a href="cart.html">Cart 🛒</a>
 
     </nav>
+
+
+    <!-- SEARCH -->
+
+    <div class="search-selector search-selector-right">
+
+        <details class="search-dropdown">
+
+            <summary class="search-button" aria-label="Search">
+                <span class="search-icon" aria-hidden="true">🔍</span>
+                <span class="search-text">Search</span>
+            </summary>
+
+            <!-- SEARCH OPTIONS -->
+
+            <div class="search-options" role="search">
+
+                <div class="search-options-header">
+                    <span>SEARCH STORE</span>
+                    <p>Find products, collections and offers</p>
+                </div>
+
+                <div class="search-box">
+
+                    <input
+                        type="search"
+                        id="search-input"
+                        class="search-input"
+                        placeholder="What are you looking for?"
+                        aria-label="Search the store">
+
+                    <button
+                        type="button"
+                        class="search-submit">
+                        SEARCH
+                    </button>
+
+                </div>
+
+                <!-- CATEGORIES -->
+
+                <div class="search-suggestions">
+
+                    <span>CATEGORIES</span>
+
+                    <a href="#">Shirts</a>
+                    <a href="#">T-shirts</a>
+                    <a href="#">Sweatshirts</a>
+                    <a href="#">Jackets</a>
+                    <a href="#">Blazers</a>
+                    <a href="#">Outfits</a>
+
+                </div>
+
+            </div>
+
+        </details>
+
+    </div>
 
 </header>
 
@@ -61,12 +126,200 @@
 
 
 
+        <!-- FILTERS -->
+
+        <section class="filters-section">
+
+
+            <!-- CATEGORIES -->
+
+            <div class="filter-categories">
+
+                <button
+                    type="button"
+                    class="filter-pill active"
+                    data-filter="all"
+                    aria-pressed="true">
+                    All
+                </button>
+
+                <button
+                    type="button"
+                    class="filter-pill"
+                    data-filter="shirts"
+                    aria-pressed="false">
+                    Shirts
+                </button>
+
+                <button
+                    type="button"
+                    class="filter-pill"
+                    data-filter="t-shirts"
+                    aria-pressed="false">
+                    T-shirts
+                </button>
+
+                <button
+                    type="button"
+                    class="filter-pill"
+                    data-filter="sweatshirts"
+                    aria-pressed="false">
+                    Sweatshirts
+                </button>
+
+                <button
+                    type="button"
+                    class="filter-pill"
+                    data-filter="jackets"
+                    aria-pressed="false">
+                    Jackets
+                </button>
+
+                <button
+                    type="button"
+                    class="filter-pill"
+                    data-filter="blazers"
+                    aria-pressed="false">
+                    Blazers
+                </button>
+
+                <button
+                    type="button"
+                    class="filter-pill"
+                    data-filter="outfits"
+                    aria-pressed="false">
+                    Outfits
+                </button>
+
+            </div>
+
+
+
+            <!-- FILTER BAR -->
+
+            <div class="filter-bar">
+
+
+                <!-- PRICE -->
+
+                <div class="filter-group">
+
+                    <span class="filter-title">PRICE (EGP)</span>
+
+                    <div class="filter-price">
+
+                        <input
+                            type="number"
+                            id="price-min"
+                            class="filter-input"
+                            placeholder="Min"
+                            min="0"
+                            aria-label="Minimum price">
+
+                        <span>to</span>
+
+                        <input
+                            type="number"
+                            id="price-max"
+                            class="filter-input"
+                            placeholder="Max"
+                            min="0"
+                            aria-label="Maximum price">
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- COLORS -->
+
+                <div class="filter-group">
+
+                    <span class="filter-title">COLORS</span>
+
+                    <div class="filter-colors">
+
+                        <button
+                            type="button"
+                            class="filter-color filter-color-black"
+                            data-color="black"
+                            aria-label="Black"
+                            aria-pressed="false">
+                        </button>
+
+                        <button
+                            type="button"
+                            class="filter-color filter-color-white"
+                            data-color="white"
+                            aria-label="White"
+                            aria-pressed="false">
+                        </button>
+
+                        <button
+                            type="button"
+                            class="filter-color filter-color-navy"
+                            data-color="navy"
+                            aria-label="Navy"
+                            aria-pressed="false">
+                        </button>
+
+                        <button
+                            type="button"
+                            class="filter-color filter-color-olive"
+                            data-color="olive"
+                            aria-label="Olive"
+                            aria-pressed="false">
+                        </button>
+
+                        <button
+                            type="button"
+                            class="filter-color filter-color-beige"
+                            data-color="beige"
+                            aria-label="Beige"
+                            aria-pressed="false">
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- SORT -->
+
+                <div class="filter-group">
+
+                    <label for="sort-by" class="filter-title">
+                        SORT BY
+                    </label>
+
+                    <select id="sort-by" class="filter-select">
+
+                        <option value="newest">Newest</option>
+
+                        <option value="price-low">Price: low to high</option>
+
+                        <option value="price-high">Price: high to low</option>
+
+                    </select>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
         <div class="men-products">
 
 
             <!-- PRODUCT 1 -->
 
-            <div class="men-card">
+            <div class="men-card" data-category="outfits" data-price="1350">
 
                 <img
                     src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f"
@@ -84,9 +337,17 @@
                         EGP 1,350
                     </span>
 
-                    <a href="product.html" class="men-button">
-                        View Product
-                    </a>
+                    <div class="men-actions">
+
+                        <a href="product.html" class="men-button">
+                            View Product
+                        </a>
+
+                        <a href="cart.html" class="men-cart-link">
+                            Add to Cart
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -96,7 +357,7 @@
 
             <!-- PRODUCT 2 -->
 
-            <div class="men-card">
+            <div class="men-card" data-category="shirts" data-price="900">
 
                 <img
                     src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc"
@@ -114,9 +375,17 @@
                         EGP 900
                     </span>
 
-                    <a href="product.html" class="men-button">
-                        View Product
-                    </a>
+                    <div class="men-actions">
+
+                        <a href="product.html" class="men-button">
+                            View Product
+                        </a>
+
+                        <a href="cart.html" class="men-cart-link">
+                            Add to Cart
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -126,7 +395,7 @@
 
             <!-- PRODUCT 3 -->
 
-            <div class="men-card">
+            <div class="men-card" data-category="shirts" data-price="850">
 
                 <img
                     src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3"
@@ -144,9 +413,17 @@
                         EGP 850
                     </span>
 
-                    <a href="product.html" class="men-button">
-                        View Product
-                    </a>
+                    <div class="men-actions">
+
+                        <a href="product.html" class="men-button">
+                            View Product
+                        </a>
+
+                        <a href="cart.html" class="men-cart-link">
+                            Add to Cart
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -156,7 +433,7 @@
 
             <!-- PRODUCT 4 -->
 
-            <div class="men-card">
+            <div class="men-card" data-category="jackets" data-price="2200">
 
                 <img
                     src="https://images.unsplash.com/photo-1551028719-00167b16eac5"
@@ -174,9 +451,17 @@
                         EGP 2,200
                     </span>
 
-                    <a href="product.html" class="men-button">
-                        View Product
-                    </a>
+                    <div class="men-actions">
+
+                        <a href="product.html" class="men-button">
+                            View Product
+                        </a>
+
+                        <a href="cart.html" class="men-cart-link">
+                            Add to Cart
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -186,7 +471,7 @@
 
             <!-- PRODUCT 5 -->
 
-            <div class="men-card">
+            <div class="men-card" data-category="shirts" data-price="750">
 
                 <img
                     src="https://images.unsplash.com/photo-1551489186-cf8726f514f8"
@@ -204,9 +489,17 @@
                         EGP 750
                     </span>
 
-                    <a href="product.html" class="men-button">
-                        View Product
-                    </a>
+                    <div class="men-actions">
+
+                        <a href="product.html" class="men-button">
+                            View Product
+                        </a>
+
+                        <a href="cart.html" class="men-cart-link">
+                            Add to Cart
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -216,7 +509,7 @@
 
             <!-- PRODUCT 6 -->
 
-            <div class="men-card">
+            <div class="men-card" data-category="jackets" data-price="1600">
 
                 <img
                     src="https://images.unsplash.com/photo-1516826957135-700dedea698c"
@@ -234,9 +527,17 @@
                         EGP 1,600
                     </span>
 
-                    <a href="product.html" class="men-button">
-                        View Product
-                    </a>
+                    <div class="men-actions">
+
+                        <a href="product.html" class="men-button">
+                            View Product
+                        </a>
+
+                        <a href="cart.html" class="men-cart-link">
+                            Add to Cart
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -246,7 +547,7 @@
 
             <!-- PRODUCT 7 -->
 
-            <div class="men-card">
+            <div class="men-card" data-category="blazers" data-price="2400">
 
                 <img
                     src="https://images.unsplash.com/photo-1490114538077-0a7f8cb49891"
@@ -264,9 +565,17 @@
                         EGP 2,400
                     </span>
 
-                    <a href="product.html" class="men-button">
-                        View Product
-                    </a>
+                    <div class="men-actions">
+
+                        <a href="product.html" class="men-button">
+                            View Product
+                        </a>
+
+                        <a href="cart.html" class="men-cart-link">
+                            Add to Cart
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -276,7 +585,7 @@
 
             <!-- PRODUCT 8 -->
 
-            <div class="men-card">
+            <div class="men-card" data-category="outfits" data-price="1450">
 
                 <img
                     src="https://images.unsplash.com/photo-1488161628813-04466f872be2"
@@ -294,9 +603,17 @@
                         EGP 1,450
                     </span>
 
-                    <a href="product.html" class="men-button">
-                        View Product
-                    </a>
+                    <div class="men-actions">
+
+                        <a href="product.html" class="men-button">
+                            View Product
+                        </a>
+
+                        <a href="cart.html" class="men-cart-link">
+                            Add to Cart
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -306,7 +623,7 @@
 
             <!-- PRODUCT 9 -->
 
-            <div class="men-card">
+            <div class="men-card" data-category="t-shirts" data-price="700">
 
                 <img
                     src="https://images.unsplash.com/photo-1610652492500-ded49ceeb378"
@@ -324,9 +641,17 @@
                         EGP 700
                     </span>
 
-                    <a href="product.html" class="men-button">
-                        View Product
-                    </a>
+                    <div class="men-actions">
+
+                        <a href="product.html" class="men-button">
+                            View Product
+                        </a>
+
+                        <a href="cart.html" class="men-cart-link">
+                            Add to Cart
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -336,7 +661,7 @@
 
             <!-- PRODUCT 10 -->
 
-            <div class="men-card">
+            <div class="men-card" data-category="t-shirts" data-price="800">
 
                 <img
                     src="https://images.unsplash.com/photo-1610652492500-ded49ceeb378"
@@ -354,9 +679,17 @@
                         EGP 800
                     </span>
 
-                    <a href="product.html" class="men-button">
-                        View Product
-                    </a>
+                    <div class="men-actions">
+
+                        <a href="product.html" class="men-button">
+                            View Product
+                        </a>
+
+                        <a href="cart.html" class="men-cart-link">
+                            Add to Cart
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -366,7 +699,7 @@
 
             <!-- PRODUCT 11 -->
 
-            <div class="men-card">
+            <div class="men-card" data-category="jackets" data-price="1850">
 
                 <img
                     src="https://images.unsplash.com/photo-1516826957135-700dedea698c"
@@ -384,9 +717,17 @@
                         EGP 1,850
                     </span>
 
-                    <a href="product.html" class="men-button">
-                        View Product
-                    </a>
+                    <div class="men-actions">
+
+                        <a href="product.html" class="men-button">
+                            View Product
+                        </a>
+
+                        <a href="cart.html" class="men-cart-link">
+                            Add to Cart
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -396,7 +737,7 @@
 
             <!-- PRODUCT 12 -->
 
-            <div class="men-card">
+            <div class="men-card" data-category="shirts" data-price="1000">
 
                 <img
                     src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273"
@@ -414,9 +755,17 @@
                         EGP 1,000
                     </span>
 
-                    <a href="product.html" class="men-button">
-                        View Product
-                    </a>
+                    <div class="men-actions">
+
+                        <a href="product.html" class="men-button">
+                            View Product
+                        </a>
+
+                        <a href="cart.html" class="men-cart-link">
+                            Add to Cart
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -426,7 +775,7 @@
 
             <!-- PRODUCT 13 -->
 
-            <div class="men-card">
+            <div class="men-card" data-category="outfits" data-price="1500">
 
                 <img
                     src="https://images.unsplash.com/photo-1503341504253-dff4815485f1"
@@ -444,9 +793,17 @@
                         EGP 1,500
                     </span>
 
-                    <a href="product.html" class="men-button">
-                        View Product
-                    </a>
+                    <div class="men-actions">
+
+                        <a href="product.html" class="men-button">
+                            View Product
+                        </a>
+
+                        <a href="cart.html" class="men-cart-link">
+                            Add to Cart
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -456,7 +813,7 @@
 
             <!-- PRODUCT 14 -->
 
-            <div class="men-card">
+            <div class="men-card" data-category="sweatshirts" data-price="1100">
 
                 <img
                     src="https://images.unsplash.com/photo-1598808503746-f34c53b9323e"
@@ -474,9 +831,17 @@
                         EGP 1,100
                     </span>
 
-                    <a href="product.html" class="men-button">
-                        View Product
-                    </a>
+                    <div class="men-actions">
+
+                        <a href="product.html" class="men-button">
+                            View Product
+                        </a>
+
+                        <a href="cart.html" class="men-cart-link">
+                            Add to Cart
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -486,7 +851,7 @@
 
             <!-- PRODUCT 15 -->
 
-            <div class="men-card">
+            <div class="men-card" data-category="shirts" data-price="850">
 
                 <img
                     src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3"
@@ -504,9 +869,17 @@
                         EGP 850
                     </span>
 
-                    <a href="product.html" class="men-button">
-                        View Product
-                    </a>
+                    <div class="men-actions">
+
+                        <a href="product.html" class="men-button">
+                            View Product
+                        </a>
+
+                        <a href="cart.html" class="men-cart-link">
+                            Add to Cart
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -516,7 +889,7 @@
 
             <!-- PRODUCT 16 -->
 
-            <div class="men-card">
+            <div class="men-card" data-category="blazers" data-price="2500">
 
                 <img
                     src="https://images.unsplash.com/photo-1490114538077-0a7f8cb49891"
@@ -534,9 +907,17 @@
                         EGP 2,500
                     </span>
 
-                    <a href="product.html" class="men-button">
-                        View Product
-                    </a>
+                    <div class="men-actions">
+
+                        <a href="product.html" class="men-button">
+                            View Product
+                        </a>
+
+                        <a href="cart.html" class="men-cart-link">
+                            Add to Cart
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -546,7 +927,7 @@
 
             <!-- PRODUCT 17 -->
 
-            <div class="men-card">
+            <div class="men-card" data-category="outfits" data-price="1550">
 
                 <img
                     src="https://images.unsplash.com/photo-1488161628813-04466f872be2"
@@ -564,9 +945,17 @@
                         EGP 1,550
                     </span>
 
-                    <a href="product.html" class="men-button">
-                        View Product
-                    </a>
+                    <div class="men-actions">
+
+                        <a href="product.html" class="men-button">
+                            View Product
+                        </a>
+
+                        <a href="cart.html" class="men-cart-link">
+                            Add to Cart
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -576,7 +965,7 @@
 
             <!-- PRODUCT 18 -->
 
-            <div class="men-card">
+            <div class="men-card" data-category="jackets" data-price="2100">
 
                 <img
                     src="https://images.unsplash.com/photo-1551028719-00167b16eac5"
@@ -594,9 +983,17 @@
                         EGP 2,100
                     </span>
 
-                    <a href="product.html" class="men-button">
-                        View Product
-                    </a>
+                    <div class="men-actions">
+
+                        <a href="product.html" class="men-button">
+                            View Product
+                        </a>
+
+                        <a href="cart.html" class="men-cart-link">
+                            Add to Cart
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -606,7 +1003,7 @@
 
             <!-- PRODUCT 19 -->
 
-            <div class="men-card">
+            <div class="men-card" data-category="shirts" data-price="900">
 
                 <img
                     src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273"
@@ -624,9 +1021,17 @@
                         EGP 900
                     </span>
 
-                    <a href="product.html" class="men-button">
-                        View Product
-                    </a>
+                    <div class="men-actions">
+
+                        <a href="product.html" class="men-button">
+                            View Product
+                        </a>
+
+                        <a href="cart.html" class="men-cart-link">
+                            Add to Cart
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -636,7 +1041,7 @@
 
             <!-- PRODUCT 20 -->
 
-            <div class="men-card">
+            <div class="men-card" data-category="outfits" data-price="2000">
 
                 <img
                     src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f"
@@ -654,9 +1059,17 @@
                         EGP 2,000
                     </span>
 
-                    <a href="product.html" class="men-button">
-                        View Product
-                    </a>
+                    <div class="men-actions">
+
+                        <a href="product.html" class="men-button">
+                            View Product
+                        </a>
+
+                        <a href="cart.html" class="men-cart-link">
+                            Add to Cart
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -672,4 +1085,4 @@
 
 </body>
 
-</html>
+</html> 

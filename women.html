@@ -18,7 +18,10 @@
     <!-- NAVBAR — شريط التنقل -->
 
     <header class="navbar">
-
+<a href="wishlist.html" class="wishlist-link">
+    <span class="wishlist-heart">♡</span>
+    <span>Wishlist</span>
+</a>
         <a href="index.html" class="logo">
             STYLE STORE
         </a>
@@ -47,6 +50,59 @@
 
         </nav>
 
+<!-- SEARCH -->
+
+    <div class="search-selector search-selector-right">
+
+        <details class="search-dropdown">
+
+            <summary class="search-button" aria-label="Search">
+                <span class="search-icon" aria-hidden="true">🔍</span>
+                <span class="search-text">Search</span>
+            </summary>
+
+            <!-- SEARCH OPTIONS -->
+
+            <div class="search-options" role="search">
+
+                <div class="search-options-header">
+                    <span>SEARCH STORE</span>
+                    <p>Find products, collections and offers</p>
+                </div>
+
+                <div class="search-box">
+
+                    <input
+                        type="search"
+                        id="search-input"
+                        class="search-input"
+                        placeholder="What are you looking for?"
+                        aria-label="Search the store">
+
+                    <button
+                        type="button"
+                        class="search-submit">
+                        SEARCH
+                    </button>
+
+                </div>
+
+ <!-- CATEGORIES -->
+
+                <div class="search-suggestions">
+
+                    <span>CATEGORIES</span>
+
+                    <a href="#">Shirts</a>
+                    <a href="#">T-shirts</a>
+                    <a href="#">Sweatshirts</a>
+                    <a href="#">Jackets</a>
+                    <a href="#">Blazers</a>
+                    <a href="#">Outfits</a>
+
+                </div>
+
+
     </header>
 
     <!-- WOMEN PAGE — صفحة الملابس النسائية -->
@@ -70,6 +126,192 @@
                 </span>
 
             </div>
+
+
+             <!-- FILTERS -->
+
+        <section class="filters-section">
+
+
+            <!-- CATEGORIES -->
+
+            <div class="filter-categories">
+
+                <button
+                    type="button"
+                    class="filter-pill active"
+                    data-filter="all"
+                    aria-pressed="true">
+                    All
+                </button>
+
+                <button
+                    type="button"
+                    class="filter-pill"
+                    data-filter="shirts"
+                    aria-pressed="false">
+                    Shirts
+                </button>
+
+                <button
+                    type="button"
+                    class="filter-pill"
+                    data-filter="t-shirts"
+                    aria-pressed="false">
+                    T-shirts
+                </button>
+
+                <button
+                    type="button"
+                    class="filter-pill"
+                    data-filter="sweatshirts"
+                    aria-pressed="false">
+                    Sweatshirts
+                </button>
+
+                <button
+                    type="button"
+                    class="filter-pill"
+                    data-filter="jackets"
+                    aria-pressed="false">
+                    Jackets
+                </button>
+
+                <button
+                    type="button"
+                    class="filter-pill"
+                    data-filter="blazers"
+                    aria-pressed="false">
+                    Blazers
+                </button>
+
+                <button
+                    type="button"
+                    class="filter-pill"
+                    data-filter="outfits"
+                    aria-pressed="false">
+                    Outfits
+                </button>
+
+            </div>
+
+
+
+            <!-- FILTER BAR -->
+
+            <div class="filter-bar">
+
+
+                <!-- PRICE -->
+
+                <div class="filter-group">
+
+                    <span class="filter-title">PRICE (EGP)</span>
+
+                    <div class="filter-price">
+
+                        <input
+                            type="number"
+                            id="price-min"
+                            class="filter-input"
+                            placeholder="Min"
+                            min="0"
+                            aria-label="Minimum price">
+
+                        <span>to</span>
+
+                        <input
+                            type="number"
+                            id="price-max"
+                            class="filter-input"
+                            placeholder="Max"
+                            min="0"
+                            aria-label="Maximum price">
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- COLORS -->
+
+                <div class="filter-group">
+
+                    <span class="filter-title">COLORS</span>
+
+                    <div class="filter-colors">
+
+                        <button
+                            type="button"
+                            class="filter-color filter-color-black"
+                            data-color="black"
+                            aria-label="Black"
+                            aria-pressed="false">
+                        </button>
+
+                        <button
+                            type="button"
+                            class="filter-color filter-color-white"
+                            data-color="white"
+                            aria-label="White"
+                            aria-pressed="false">
+                        </button>
+
+                        <button
+                            type="button"
+                            class="filter-color filter-color-navy"
+                            data-color="navy"
+                            aria-label="Navy"
+                            aria-pressed="false">
+                        </button>
+
+                        <button
+                            type="button"
+                            class="filter-color filter-color-olive"
+                            data-color="olive"
+                            aria-label="Olive"
+                            aria-pressed="false">
+                        </button>
+
+                        <button
+                            type="button"
+                            class="filter-color filter-color-beige"
+                            data-color="beige"
+                            aria-label="Beige"
+                            aria-pressed="false">
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- SORT -->
+
+                <div class="filter-group">
+
+                    <label for="sort-by" class="filter-title">
+                        SORT BY
+                    </label>
+
+                    <select id="sort-by" class="filter-select">
+
+                        <option value="newest">Newest</option>
+
+                        <option value="price-low">Price: low to high</option>
+
+                        <option value="price-high">Price: high to low</option>
+
+                    </select>
+
+                </div>
+
+
+            </div>
+
+        </section>
 
             <div class="women-products">
 

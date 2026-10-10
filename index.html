@@ -14,206 +14,237 @@
 </head>
 
 <body>
+<!-- SIDE MENU TOGGLE — زر القائمة الجانبية -->
+<input type="checkbox" id="menu-toggle" class="menu-toggle">
 
-    <!-- SIDE MENU — القائمة الجانبية -->
+<label for="menu-toggle" class="menu-button" aria-label="Open menu">
+    ☰
+</label>
 
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+<!-- SIDE MENU — القائمة الجانبية -->
+<aside class="side-menu">
 
-    <label for="menu-toggle" class="menu-button">
-        ☰
-    </label>
+    <!-- MENU HEADER — رأس القائمة -->
+    <div class="side-menu-header">
+        <div>
+            <span>STYLE STORE</span>
+            <h2>Explore</h2>
+        </div>
 
-    <!-- SIDE MENU CONTENT — محتوى القائمة -->
+        <label for="menu-toggle" class="close-menu" aria-label="Close menu">
+            ×
+        </label>
+    </div>
 
-    <aside class="side-menu">
+    <!-- MENU INTRO — مقدمة القائمة -->
+    <div class="side-menu-intro">
+        <p>Discover your style</p>
 
-        <!-- MENU HEADER — رأس القائمة -->
+        <span>
+            Explore our latest fashion collections,
+            exclusive offers and carefully selected pieces.
+        </span>
+    </div>
 
-        <div class="side-menu-header">
+    <!-- MAIN NAVIGATION — التنقل الرئيسي -->
+    <nav class="side-menu-links">
+        <a href="index.html"><span>01</span> Home</a>
+        <a href="men.html"><span>02</span> Men</a>
+        <a href="women.html"><span>03</span> Women</a>
+        <a href="kids.html"><span>04</span> Kids</a>
+        <a href="men-jeans.html"><span>05</span> Jeans</a>
+    </nav>
 
-            <div>
-                <span>STYLE STORE</span>
-                <h2>Explore</h2>
+    <!-- SHOPPING — التسوق -->
+    <div class="side-menu-section">
+        <h3>SHOPPING</h3>
+
+        <a href="offers.html">Offers &amp; Sale</a>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="cart.html">Shopping Cart</a>
+        <a href="checkout.html">Checkout</a>
+    </div>
+
+    <!-- SERVICES — خدمات المتجر -->
+    <div class="side-menu-section">
+        <h3>STYLE STORE SERVICES</h3>
+
+        <a href="#">Free Shipping</a>
+        <a href="#">Easy Returns</a>
+        <a href="#">Secure Payment</a>
+        <a href="#">Customer Support</a>
+    </div>
+
+    <!-- MENU FEATURE — الميزة المميزة -->
+    <div class="side-menu-feature">
+        <span>NEW COLLECTION</span>
+
+        <h3>
+            Find Your
+            <br>
+            Signature Style
+        </h3>
+
+        <p>
+            Discover premium pieces designed
+            for everyday confidence.
+        </p>
+
+        <a href="index.html">Explore Collection →</a>
+    </div>
+
+    <!-- MENU FOOTER — أسفل القائمة -->
+    <div class="side-menu-footer">
+        <p>STYLE STORE</p>
+        <span>Fashion • Style • Quality</span>
+    </div>
+
+</aside>
+
+<!-- NAVBAR — شريط التنقل -->
+<header class="navbar">
+
+
+<a href="wishlist.html" class="wishlist-link">
+    <span class="wishlist-heart">♡</span>
+    <span>Wishlist</span>
+</a>
+
+
+
+
+
+    <!-- LANGUAGE SELECTOR — اختيار اللغة -->
+    <div class="language-selector">
+
+        <details class="language-dropdown">
+
+            <summary class="language-button" aria-label="Choose language">
+                <span class="language-code">EN</span>
+                <span class="language-name">English</span>
+                <span class="language-arrow"></span>
+            </summary>
+
+            <!-- LANGUAGE OPTIONS — قائمة اللغات -->
+            <div class="language-options">
+
+                <div class="language-options-header">
+                    <span>CHOOSE LANGUAGE</span>
+                    <p>Select your preferred language</p>
+                </div>
+
+                <button
+                    type="button"
+                    class="language-option active"
+                    aria-pressed="true"
+                >
+                    <span class="language-option-code">EN</span>
+
+                    <span class="language-option-info">
+                        <strong>English</strong>
+                        <small>English language</small>
+                    </span>
+
+                    <span class="language-check">✓</span>
+                </button>
+
+                <button
+                    type="button"
+                    class="language-option"
+                    aria-pressed="false"
+                >
+                    <span class="language-option-code">AR</span>
+
+                    <span class="language-option-info">
+                        <strong>العربية</strong>
+                        <small>اللغة العربية</small>
+                    </span>
+                </button>
+
             </div>
 
-            <label for="menu-toggle" class="close-menu">
-                ×
-            </label>
+        </details>
 
-        </div>
+    </div>
 
-        <!-- MENU INTRO — مقدمة القائمة -->
+    <!-- SEARCH — البحث -->
+    <div class="search-selector">
 
-        <div class="side-menu-intro">
+        <details class="search-dropdown">
 
-            <p>
-                Discover your style
-            </p>
+            <summary class="search-button" aria-label="Search">
+                <span class="search-icon" aria-hidden="true">🔍</span>
+                <span class="search-text">Search</span>
+            </summary>
 
-            <span>
-                Explore our latest fashion collections,
-                exclusive offers and carefully selected pieces.
-            </span>
+            <!-- SEARCH OPTIONS — لوحة البحث -->
+            <div class="search-options" role="search">
 
-        </div>
+                <div class="search-options-header">
+                    <span>SEARCH STORE</span>
+                    <p>Find products, collections and offers</p>
+                </div>
 
-        <!-- MAIN NAVIGATION — التنقل الرئيسي -->
+                <div class="search-box">
 
-        <nav class="side-menu-links">
+                    <input
+                        type="search"
+                        id="search-input"
+                        class="search-input"
+                        placeholder="What are you looking for?"
+                        aria-label="Search the store"
+                    >
 
-            <a href="index.html">
-                <span>01</span>
-                Home
-            </a>
+                    <button
+                        type="button"
+                        class="search-submit"
+                    >
+                        SEARCH
+                    </button>
 
-            <a href="men.html">
-                <span>02</span>
-                Men
-            </a>
+                </div>
 
-            <a href="women.html">
-                <span>03</span>
-                Women
-            </a>
+                <!-- POPULAR SEARCHES — عمليات بحث شائعة -->
+                <div class="search-suggestions">
+                    <span>POPULAR</span>
 
-            <a href="kids.html">
-                <span>04</span>
-                Kids
-            </a>
+                    <a href="men.html">Men</a>
+                    <a href="women.html">Women</a>
+                    <a href="kids.html">Kids</a>
+                    <a href="men-jeans.html">Jeans</a>
+                    <a href="offers.html">Offers</a>
+                </div>
 
-            <a href="men-jeans.html">
-                <span>05</span>
-                Jeans
-            </a>
+            </div>
 
-        </nav>
+        </details>
 
-        <!-- SHOPPING — التسوق -->
+    </div>
 
-        <div class="side-menu-section">
 
-            <h3>SHOPPING</h3>
 
-            <a href="offers.html">
-                Offers & Sale
-            </a>
+    <!-- MAIN NAVIGATION — روابط الموقع -->
+    <nav class="navbar-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="men.html">Men</a>
+        <a href="women.html">Women</a>
+        <a href="kids.html">Kids</a>
+        <a href="men-jeans.html">Jeans</a>
+        <a href="cart.html">Cart 🛒</a>
 
-            <a href="wishlist.html">
-                Wishlist
-            </a>
-
-            <a href="cart.html">
-                Shopping Cart
-            </a>
-
-            <a href="checkout.html">
-                Checkout
-            </a>
-
-        </div>
-
-        <!-- SERVICES — خدمات المتجر -->
-
-        <div class="side-menu-section">
-
-            <h3>STYLE STORE SERVICES</h3>
-
-            <a href="#">
-                Free Shipping
-            </a>
-
-            <a href="#">
-                Easy Returns
-            </a>
-
-            <a href="#">
-                Secure Payment
-            </a>
-
-            <a href="#">
-                Customer Support
-            </a>
-
-        </div>
-
-        <!-- MENU FEATURE — الميزة المميزة -->
-
-        <div class="side-menu-feature">
-
-            <span>NEW COLLECTION</span>
-
-            <h3>
-                Find Your
-                <br>
-                Signature Style
-            </h3>
-
-            <p>
-                Discover premium pieces designed
-                for everyday confidence.
-            </p>
-
-            <a href="index.html">
-                Explore Collection →
-            </a>
-
-        </div>
-
-        <!-- MENU FOOTER — أسفل القائمة -->
-
-        <div class="side-menu-footer">
-
-            <p>
-                STYLE STORE
-            </p>
-
-            <span>
-                Fashion • Style • Quality
-            </span>
-
-        </div>
-
-    </aside>
-
-    <!-- NAVBAR — شريط التنقل -->
-
-    <header class="navbar">
-
-        <a href="index.html" class="logo">
-            STYLE STORE
+        <a href="login.html" class="login-link">
+            <span class="login-icon" aria-hidden="true">👤</span>
+            Login
         </a>
+    </nav>
 
-        <nav>
+    <!-- BRAND LOGO — شعار المتجر -->
+    <a href="index.html" class="logo">
+        STYLE STORE
+    </a>
 
-            <a href="index.html">
-                Home
-            </a>
-
-            <a href="men.html">
-                Men
-            </a>
-
-            <a href="women.html">
-                Women
-            </a>
-
-            <a href="kids.html">
-                Kids
-            </a>
-
-            <a href="cart.html">
-                Cart 🛒
-            </a>
-
-            <a href="login.html" class="login-link">
-                <span class="login-icon">👤</span>
-                Login
-            </a>
-
-        </nav>
-
-    </header>
-
+</header>
+   
     <!-- HERO SECTION — القسم الرئيسي -->
 
     <section class="hero">
@@ -941,3 +972,13 @@
                 <a href="cart.html">
                     View Cart
                 </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
