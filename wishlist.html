@@ -1,6 +1,7 @@
 
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
@@ -8,7 +9,7 @@
 
     <title>My Wishlist | STYLE STORE</title>
 
-    
+    <!-- MAIN CSS / ملف التنسيق الأساسي -->
     <link rel="stylesheet" href="css/master.css">
 </head>
 
@@ -29,12 +30,15 @@
         </nav>
 
         <div class="wl-header-actions">
+
             <a href="index.html#search" class="wl-header-link">
                 <span class="wl-header-icon">⌕</span>
                 <span>Search</span>
             </a>
 
-            <a href="wishlist.html" class="wl-header-link wl-active">
+            <a href="wishlist.html"
+               class="wl-header-link wl-active wishlist-link"
+               aria-current="page">
                 <span class="wl-header-icon">♡</span>
                 <span>Wishlist</span>
             </a>
@@ -43,11 +47,13 @@
                 <span class="wl-header-icon">♧</span>
                 <span>Cart</span>
             </a>
+
         </div>
 
     </header>
 
 
+    <!-- MAIN CONTENT / المحتوى الرئيسي -->
     <main class="wl-main">
 
         <!-- BREADCRUMB / مسار الصفحة -->
@@ -115,6 +121,7 @@
 
             <article class="wl-benefit">
                 <span class="wl-benefit-icon">♡</span>
+
                 <div>
                     <h3>Your Favorites</h3>
                     <p>Keep your favorite styles together.</p>
@@ -123,6 +130,7 @@
 
             <article class="wl-benefit">
                 <span class="wl-benefit-icon">✧</span>
+
                 <div>
                     <h3>Timeless Style</h3>
                     <p>Find pieces for every occasion.</p>
@@ -131,24 +139,29 @@
 
             <article class="wl-benefit">
                 <span class="wl-benefit-icon">↗</span>
+
                 <div>
                     <h3>Shop Your Way</h3>
-                    <p>Explore every piece at your pace.</p>
+                    <p>Explore collections at your own pace.</p>
                 </div>
             </article>
 
         </section>
 
 
-        <!-- COLLECTION HEADING / عنوان المنتجات -->
+        <!-- WISHLIST COLLECTION / مجموعة المفضلة -->
         <section class="wl-collection">
 
             <div class="wl-section-heading">
 
                 <div>
                     <span class="wl-eyebrow">YOUR PERSONAL EDIT</span>
+
                     <h2>Pieces Worth Keeping</h2>
-                    <p>Explore a selection of styles chosen for inspiration.</p>
+
+                    <p>
+                        Your personally selected pieces, all in one place.
+                    </p>
                 </div>
 
                 <a href="women.html" class="wl-text-link">
@@ -158,268 +171,31 @@
             </div>
 
 
-            <!-- CATEGORY LABELS / التصنيفات -->
+            <!-- CATEGORY LINKS / روابط الأقسام -->
             <div class="wl-categories">
-                <span class="wl-category wl-category-active">All Pieces</span>
+
+                <span class="wl-category wl-category-active">
+                    All Pieces
+                </span>
+
                 <a href="men.html" class="wl-category">Men</a>
+
                 <a href="women.html" class="wl-category">Women</a>
+
                 <a href="kids.html" class="wl-category">Kids</a>
+
                 <a href="men-jeans.html" class="wl-category">Jeans</a>
+
             </div>
 
 
-            <!-- PRODUCTS GRID / المنتجات -->
-            <div class="wl-grid">
-
-
-                <!-- PRODUCT 1 -->
-                <article class="wl-product">
-
-                    <a href="product.html" class="wl-product-image">
-                        <img
-                            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=700&q=85"
-                            alt="Contemporary fashion outfit">
-
-                        <span class="wl-product-label">EDITOR'S PICK</span>
-                    </a>
-
-                    <div class="wl-product-info">
-                        <span class="wl-product-category">WOMEN · FASHION</span>
-                        <h3>Contemporary City Look</h3>
-                        <p class="wl-product-description">
-                            A confident look with modern everyday appeal.
-                        </p>
-
-                        <div class="wl-price-row">
-                            <strong>EGP 1,500</strong>
-                            <span>New Season</span>
-                        </div>
-
-                        <a href="product.html" class="wl-view-btn">
-                            View Product <span>→</span>
-                        </a>
-                    </div>
-
-                </article>
-
-
-                <!-- PRODUCT 2 -->
-                <article class="wl-product">
-
-                    <a href="product.html" class="wl-product-image">
-                        <img
-                            src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=700&q=85"
-                            alt="Elegant women's outfit">
-
-                        <span class="wl-product-label">TIMELESS</span>
-                    </a>
-
-                    <div class="wl-product-info">
-                        <span class="wl-product-category">WOMEN · DRESSES</span>
-                        <h3>Classic Elegant Style</h3>
-                        <p class="wl-product-description">
-                            Refined details for a graceful appearance.
-                        </p>
-
-                        <div class="wl-price-row">
-                            <strong>EGP 1,650</strong>
-                            <span>Classic Edit</span>
-                        </div>
-
-                        <a href="product.html" class="wl-view-btn">
-                            View Product <span>→</span>
-                        </a>
-                    </div>
-
-                </article>
-
-
-                <!-- PRODUCT 3 -->
-                <article class="wl-product">
-
-                    <a href="product.html" class="wl-product-image">
-                        <img
-                            src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=700&q=85"
-                            alt="Modern fashion outfit">
-
-                        <span class="wl-product-label">TRENDING</span>
-                    </a>
-
-                    <div class="wl-product-info">
-                        <span class="wl-product-category">WOMEN · OUTFITS</span>
-                        <h3>Modern Fashion Essential</h3>
-                        <p class="wl-product-description">
-                            A versatile choice for your daily wardrobe.
-                        </p>
-
-                        <div class="wl-price-row">
-                            <strong>EGP 1,550</strong>
-                            <span>New Season</span>
-                        </div>
-
-                        <a href="product.html" class="wl-view-btn">
-                            View Product <span>→</span>
-                        </a>
-                    </div>
-
-                </article>
-
-
-                <!-- PRODUCT 4 -->
-                <article class="wl-product">
-
-                    <a href="product.html" class="wl-product-image">
-                        <img
-                            src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=700&q=85"
-                            alt="Women's clothing collection">
-
-                        <span class="wl-product-label">EVERYDAY</span>
-                    </a>
-
-                    <div class="wl-product-info">
-                        <span class="wl-product-category">WOMEN · ESSENTIALS</span>
-                        <h3>Everyday Wardrobe Edit</h3>
-                        <p class="wl-product-description">
-                            Easy-to-style pieces for everyday moments.
-                        </p>
-
-                        <div class="wl-price-row">
-                            <strong>EGP 1,250</strong>
-                            <span>Daily Essential</span>
-                        </div>
-
-                        <a href="product.html" class="wl-view-btn">
-                            View Product <span>→</span>
-                        </a>
-                    </div>
-
-                </article>
-
-
-                <!-- PRODUCT 5 -->
-                <article class="wl-product">
-
-                    <a href="product.html" class="wl-product-image">
-                        <img
-                            src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=700&q=85"
-                            alt="Casual fashion clothing">
-
-                        <span class="wl-product-label">CASUAL EDIT</span>
-                    </a>
-
-                    <div class="wl-product-info">
-                        <span class="wl-product-category">MEN · CASUAL</span>
-                        <h3>Relaxed Casual Essential</h3>
-                        <p class="wl-product-description">
-                            Effortless everyday styling with a clean finish.
-                        </p>
-
-                        <div class="wl-price-row">
-                            <strong>EGP 1,200</strong>
-                            <span>Everyday Wear</span>
-                        </div>
-
-                        <a href="product.html" class="wl-view-btn">
-                            View Product <span>→</span>
-                        </a>
-                    </div>
-
-                </article>
-
-
-                <!-- PRODUCT 6 -->
-                <article class="wl-product">
-
-                    <a href="product.html" class="wl-product-image">
-                        <img
-                            src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=700&q=85"
-                            alt="Neutral wardrobe collection">
-
-                        <span class="wl-product-label">MINIMAL</span>
-                    </a>
-
-                    <div class="wl-product-info">
-                        <span class="wl-product-category">WOMEN · COLLECTION</span>
-                        <h3>Minimal Wardrobe Piece</h3>
-                        <p class="wl-product-description">
-                            Understated style with a timeless feel.
-                        </p>
-
-                        <div class="wl-price-row">
-                            <strong>EGP 1,400</strong>
-                            <span>Style Essential</span>
-                        </div>
-
-                        <a href="product.html" class="wl-view-btn">
-                            View Product <span>→</span>
-                        </a>
-                    </div>
-
-                </article>
-
-
-                <!-- PRODUCT 7 -->
-                <article class="wl-product">
-
-                    <a href="product.html" class="wl-product-image">
-                        <img
-                            src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=700&q=85"
-                            alt="Fashion styling inspiration">
-
-                        <span class="wl-product-label">STYLE PICK</span>
-                    </a>
-
-                    <div class="wl-product-info">
-                        <span class="wl-product-category">WOMEN · STYLE</span>
-                        <h3>Modern Everyday Look</h3>
-                        <p class="wl-product-description">
-                            A fresh combination for your personal style.
-                        </p>
-
-                        <div class="wl-price-row">
-                            <strong>EGP 1,350</strong>
-                            <span>New Season</span>
-                        </div>
-
-                        <a href="product.html" class="wl-view-btn">
-                            View Product <span>→</span>
-                        </a>
-                    </div>
-
-                </article>
-
-
-                <!-- PRODUCT 8 -->
-                <article class="wl-product">
-
-                    <a href="product.html" class="wl-product-image">
-                        <img
-                            src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=700&q=85"
-                            alt="Fashion editorial outfit">
-
-                        <span class="wl-product-label">SIGNATURE</span>
-                    </a>
-
-                    <div class="wl-product-info">
-                        <span class="wl-product-category">WOMEN · FASHION</span>
-                        <h3>Signature Fashion Look</h3>
-                        <p class="wl-product-description">
-                            A statement style for your next occasion.
-                        </p>
-
-                        <div class="wl-price-row">
-                            <strong>EGP 1,750</strong>
-                            <span>Signature Edit</span>
-                        </div>
-
-                        <a href="product.html" class="wl-view-btn">
-                            View Product <span>→</span>
-                        </a>
-                    </div>
-
-                </article>
-
-            </div>
+            <!--
+                DYNAMIC WISHLIST / المنتجات المحفوظة
+
+                JavaScript will display the products saved
+                from the four store sections inside this grid.
+            -->
+            <div class="wl-grid" aria-live="polite"></div>
 
         </section>
 
@@ -428,7 +204,10 @@
         <section class="wl-promo">
 
             <div class="wl-promo-content">
-                <span class="wl-eyebrow">A LITTLE STYLE INSPIRATION</span>
+
+                <span class="wl-eyebrow">
+                    A LITTLE STYLE INSPIRATION
+                </span>
 
                 <h2>
                     Great style starts<br>
@@ -443,6 +222,7 @@
                 <a href="women.html" class="wl-promo-btn">
                     Explore the Collection →
                 </a>
+
             </div>
 
             <div class="wl-promo-side">
@@ -454,7 +234,7 @@
         </section>
 
 
-        <!-- SERVICE STRIP / خدمات المتجر -->
+        <!-- SERVICES / خدمات المتجر -->
         <section class="wl-services">
 
             <article>
@@ -505,6 +285,10 @@
         </div>
 
     </footer>
+
+
+    <!-- MAIN JAVASCRIPT / ربط ملف الجافاسكريبت -->
+    <script src="script.js"></script>
 
 </body>
 </html>

@@ -1,6 +1,6 @@
 
  <!DOCTYPE html>
-<html lang="en">
+
 
 <head>
 
@@ -126,191 +126,156 @@
 
 
 
-        <!-- FILTERS -->
+        
+<!-- FILTERS — فلاتر المنتجات -->
 
-        <section class="filters-section">
+<section class="filters-section">
 
+    <!-- CATEGORIES — الأقسام -->
+    <div class="filter-categories">
 
-            <!-- CATEGORIES -->
+        <button type="button"
+                class="filter-pill active"
+                data-filter="all"
+                aria-pressed="true">
+            All
+        </button>
 
-            <div class="filter-categories">
+       
+
+        <button type="button"
+                class="filter-pill"
+                data-filter="t-shirts"
+                aria-pressed="false">
+            T-Shirts
+        </button>
+
+        <button type="button"
+                class="filter-pill"
+                data-filter="sweatshirts"
+                aria-pressed="false">
+            Sweatshirts
+        </button>
+
+        
+    </div>
+
+    <!-- FILTER BAR — شريط الفلاتر -->
+    <div class="filter-bar">
+
+        <!-- PRICE FILTER — فلتر السعر -->
+        <div class="filter-group">
+
+            <label class="filter-title" for="price-min">
+                PRICE (EGP)
+            </label>
+
+            <div class="filter-price">
+
+                <input
+                    type="number"
+                    id="price-min"
+                    class="filter-input"
+                    placeholder="Min"
+                    min="0"
+                    aria-label="Minimum price">
+
+                <span>to</span>
+
+                <input
+                    type="number"
+                    id="price-max"
+                    class="filter-input"
+                    placeholder="Max"
+                    min="0"
+                    aria-label="Maximum price">
+
+            </div>
+
+        </div>
+
+        <!-- COLOR FILTER — فلتر الألوان -->
+        <div class="filter-group">
+
+            <span class="filter-title">COLORS</span>
+
+            <div class="filter-colors">
 
                 <button
                     type="button"
-                    class="filter-pill active"
-                    data-filter="all"
-                    aria-pressed="true">
-                    All
+                    class="filter-color filter-color-black"
+                    data-color="black"
+                    aria-label="Black"
+                    title="Black"
+                    aria-pressed="false">
                 </button>
 
                 <button
                     type="button"
-                    class="filter-pill"
-                    data-filter="shirts"
+                    class="filter-color filter-color-white"
+                    data-color="white"
+                    aria-label="White"
+                    title="White"
                     aria-pressed="false">
-                    Shirts
                 </button>
 
                 <button
                     type="button"
-                    class="filter-pill"
-                    data-filter="t-shirts"
+                    class="filter-color filter-color-navy"
+                    data-color="navy"
+                    aria-label="Navy"
+                    title="Navy"
                     aria-pressed="false">
-                    T-shirts
                 </button>
 
                 <button
                     type="button"
-                    class="filter-pill"
-                    data-filter="sweatshirts"
+                    class="filter-color filter-color-olive"
+                    data-color="olive"
+                    aria-label="Olive"
+                    title="Olive"
                     aria-pressed="false">
-                    Sweatshirts
                 </button>
 
                 <button
                     type="button"
-                    class="filter-pill"
-                    data-filter="jackets"
+                    class="filter-color filter-color-beige"
+                    data-color="beige"
+                    aria-label="Beige"
+                    title="Beige"
                     aria-pressed="false">
-                    Jackets
-                </button>
-
-                <button
-                    type="button"
-                    class="filter-pill"
-                    data-filter="blazers"
-                    aria-pressed="false">
-                    Blazers
-                </button>
-
-                <button
-                    type="button"
-                    class="filter-pill"
-                    data-filter="outfits"
-                    aria-pressed="false">
-                    Outfits
                 </button>
 
             </div>
 
+        </div>
 
+        <!-- SORT — ترتيب المنتجات -->
+        <div class="filter-group">
 
-            <!-- FILTER BAR -->
+            <label for="sort-by" class="filter-title">
+                SORT BY
+            </label>
 
-            <div class="filter-bar">
+            <select id="sort-by" class="filter-select">
 
+                <option value="newest">Newest</option>
 
-                <!-- PRICE -->
+                <option value="price-low">
+                    Price: low to high
+                </option>
 
-                <div class="filter-group">
+                <option value="price-high">
+                    Price: high to low
+                </option>
 
-                    <span class="filter-title">PRICE (EGP)</span>
+            </select>
 
-                    <div class="filter-price">
+        </div>
 
-                        <input
-                            type="number"
-                            id="price-min"
-                            class="filter-input"
-                            placeholder="Min"
-                            min="0"
-                            aria-label="Minimum price">
+    </div>
 
-                        <span>to</span>
-
-                        <input
-                            type="number"
-                            id="price-max"
-                            class="filter-input"
-                            placeholder="Max"
-                            min="0"
-                            aria-label="Maximum price">
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- COLORS -->
-
-                <div class="filter-group">
-
-                    <span class="filter-title">COLORS</span>
-
-                    <div class="filter-colors">
-
-                        <button
-                            type="button"
-                            class="filter-color filter-color-black"
-                            data-color="black"
-                            aria-label="Black"
-                            aria-pressed="false">
-                        </button>
-
-                        <button
-                            type="button"
-                            class="filter-color filter-color-white"
-                            data-color="white"
-                            aria-label="White"
-                            aria-pressed="false">
-                        </button>
-
-                        <button
-                            type="button"
-                            class="filter-color filter-color-navy"
-                            data-color="navy"
-                            aria-label="Navy"
-                            aria-pressed="false">
-                        </button>
-
-                        <button
-                            type="button"
-                            class="filter-color filter-color-olive"
-                            data-color="olive"
-                            aria-label="Olive"
-                            aria-pressed="false">
-                        </button>
-
-                        <button
-                            type="button"
-                            class="filter-color filter-color-beige"
-                            data-color="beige"
-                            aria-label="Beige"
-                            aria-pressed="false">
-                        </button>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- SORT -->
-
-                <div class="filter-group">
-
-                    <label for="sort-by" class="filter-title">
-                        SORT BY
-                    </label>
-
-                    <select id="sort-by" class="filter-select">
-
-                        <option value="newest">Newest</option>
-
-                        <option value="price-low">Price: low to high</option>
-
-                        <option value="price-high">Price: high to low</option>
-
-                    </select>
-
-                </div>
-
-
-            </div>
-
-
-        </section>
+</section>
 
 
 
@@ -319,10 +284,10 @@
 
             <!-- PRODUCT 1 -->
 
-            <div class="men-card" data-category="outfits" data-price="1350">
+            <div class="men-card" data-category="outfits" data-price="1350"  data-color=" white">
 
                 <img
-                    src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f"
+                    src="css\images men\sweatshirt-flat-terra-mockup.png"
                     alt="Men Casual Outfit">
 
                 <div class="men-info">
@@ -346,7 +311,14 @@
                         <a href="cart.html" class="men-cart-link">
                             Add to Cart
                         </a>
-
+                    
+<!-- MEN WISHLIST HEART / قلب المفضلة للرجال -->
+<button
+    class="men-wishlist-heart"
+    type="button"
+    aria-label="Add to wishlist"
+    title="Add to wishlist"
+>♥</button>
                     </div>
 
                 </div>
@@ -357,10 +329,10 @@
 
             <!-- PRODUCT 2 -->
 
-            <div class="men-card" data-category="shirts" data-price="900">
+            <div class="men-card" data-category="shirts" data-price="900"  data-color="black ">
 
                 <img
-                    src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc"
+                    src="css\images men\41S+9swCRBL._AC_UL480_FMwebp_QL65_.webp"
                     alt="Men Formal Shirt">
 
                 <div class="men-info">
@@ -384,7 +356,13 @@
                         <a href="cart.html" class="men-cart-link">
                             Add to Cart
                         </a>
-
+<!-- MEN WISHLIST HEART / قلب المفضلة للرجال -->
+<button
+    class="men-wishlist-heart"
+    type="button"
+    aria-label="Add to wishlist"
+    title="Add to wishlist"
+>♥</button>
                     </div>
 
                 </div>
@@ -395,10 +373,10 @@
 
             <!-- PRODUCT 3 -->
 
-            <div class="men-card" data-category="shirts" data-price="850">
+            <div class="men-card" data-category="shirts" data-price="850"  data-color="Blue">
 
                 <img
-                    src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3"
+                    src="css\images men\51+3cyik9nL._AC_UL480_FMwebp_QL65_.webp"
                     alt="Men Casual Shirt">
 
                 <div class="men-info">
@@ -422,7 +400,13 @@
                         <a href="cart.html" class="men-cart-link">
                             Add to Cart
                         </a>
-
+<!-- MEN WISHLIST HEART / قلب المفضلة للرجال -->
+<button
+    class="men-wishlist-heart"
+    type="button"
+    aria-label="Add to wishlist"
+    title="Add to wishlist"
+>♥</button>
                     </div>
 
                 </div>
@@ -433,10 +417,10 @@
 
             <!-- PRODUCT 4 -->
 
-            <div class="men-card" data-category="jackets" data-price="2200">
+            <div class="men-card" data-category="jackets" data-price="2200" data-color="Blue">
 
                 <img
-                    src="https://images.unsplash.com/photo-1551028719-00167b16eac5"
+                    src="css\images men\51+iVYeMXaL._AC_UL480_FMwebp_QL65_.webp"
                     alt="Men Leather Jacket">
 
                 <div class="men-info">
@@ -460,7 +444,13 @@
                         <a href="cart.html" class="men-cart-link">
                             Add to Cart
                         </a>
-
+<!-- MEN WISHLIST HEART / قلب المفضلة للرجال -->
+<button
+    class="men-wishlist-heart"
+    type="button"
+    aria-label="Add to wishlist"
+    title="Add to wishlist"
+>♥</button>
                     </div>
 
                 </div>
@@ -471,10 +461,10 @@
 
             <!-- PRODUCT 5 -->
 
-            <div class="men-card" data-category="shirts" data-price="750">
+            <div class="men-card" data-category="shirts" data-price="750" data-color="red">
 
                 <img
-                    src="https://images.unsplash.com/photo-1551489186-cf8726f514f8"
+                    src="css\images men\61v1-xCIFcL._AC_UL480_FMwebp_QL65_.webp"
                     alt="Men Polo Shirt">
 
                 <div class="men-info">
@@ -498,7 +488,13 @@
                         <a href="cart.html" class="men-cart-link">
                             Add to Cart
                         </a>
-
+<!-- MEN WISHLIST HEART / قلب المفضلة للرجال -->
+<button
+    class="men-wishlist-heart"
+    type="button"
+    aria-label="Add to wishlist"
+    title="Add to wishlist"
+>♥</button>
                     </div>
 
                 </div>
@@ -509,10 +505,10 @@
 
             <!-- PRODUCT 6 -->
 
-            <div class="men-card" data-category="jackets" data-price="1600">
+            <div class="men-card" data-category="jackets" data-price="1600" data-color="white">
 
                 <img
-                    src="https://images.unsplash.com/photo-1516826957135-700dedea698c"
+                    src="css\images men\backpack-terracotta-mockup.png"
                     alt="Men Casual Jacket">
 
                 <div class="men-info">
@@ -536,7 +532,13 @@
                         <a href="cart.html" class="men-cart-link">
                             Add to Cart
                         </a>
-
+<!-- MEN WISHLIST HEART / قلب المفضلة للرجال -->
+<button
+    class="men-wishlist-heart"
+    type="button"
+    aria-label="Add to wishlist"
+    title="Add to wishlist"
+>♥</button>
                     </div>
 
                 </div>
@@ -547,10 +549,10 @@
 
             <!-- PRODUCT 7 -->
 
-            <div class="men-card" data-category="blazers" data-price="2400">
+            <div class="men-card" data-category="blazers" data-price="2400" data-color="white">
 
                 <img
-                    src="https://images.unsplash.com/photo-1490114538077-0a7f8cb49891"
+                    src="css\images men\cap-flatlay-mockup.png"
                     alt="Men Blazer">
 
                 <div class="men-info">
@@ -574,7 +576,13 @@
                         <a href="cart.html" class="men-cart-link">
                             Add to Cart
                         </a>
-
+<!-- MEN WISHLIST HEART / قلب المفضلة للرجال -->
+<button
+    class="men-wishlist-heart"
+    type="button"
+    aria-label="Add to wishlist"
+    title="Add to wishlist"
+>♥</button>
                     </div>
 
                 </div>
@@ -585,10 +593,10 @@
 
             <!-- PRODUCT 8 -->
 
-            <div class="men-card" data-category="outfits" data-price="1450">
+            <div class="men-card" data-category="outfits" data-price="1450" data-color="white">
 
                 <img
-                    src="https://images.unsplash.com/photo-1488161628813-04466f872be2"
+                    src="css\images men\cap-sage-pedestal-mockup.png"
                     alt="Men Street Outfit">
 
                 <div class="men-info">
@@ -612,7 +620,13 @@
                         <a href="cart.html" class="men-cart-link">
                             Add to Cart
                         </a>
-
+<!-- MEN WISHLIST HEART / قلب المفضلة للرجال -->
+<button
+    class="men-wishlist-heart"
+    type="button"
+    aria-label="Add to wishlist"
+    title="Add to wishlist"
+>♥</button>
                     </div>
 
                 </div>
@@ -623,10 +637,10 @@
 
             <!-- PRODUCT 9 -->
 
-            <div class="men-card" data-category="t-shirts" data-price="700">
+            <div class="men-card" data-category="t-shirts" data-price="700"data-color="white">
 
                 <img
-                    src="https://images.unsplash.com/photo-1610652492500-ded49ceeb378"
+                    src="css\images men\claudio-duart-designer-ai-generated-8702726_1920.jpg"
                     alt="Men Oversized T Shirt">
 
                 <div class="men-info">
@@ -650,7 +664,13 @@
                         <a href="cart.html" class="men-cart-link">
                             Add to Cart
                         </a>
-
+<!-- MEN WISHLIST HEART / قلب المفضلة للرجال -->
+<button
+    class="men-wishlist-heart"
+    type="button"
+    aria-label="Add to wishlist"
+    title="Add to wishlist"
+>♥</button>
                     </div>
 
                 </div>
@@ -661,10 +681,10 @@
 
             <!-- PRODUCT 10 -->
 
-            <div class="men-card" data-category="t-shirts" data-price="800">
+            <div class="men-card" data-category="t-shirts" data-price="800" data-color="white">
 
                 <img
-                    src="https://images.unsplash.com/photo-1610652492500-ded49ceeb378"
+                    src="css\images men\hoodie-flat-sage-mockup (1).png"
                     alt="Men Premium T Shirt">
 
                 <div class="men-info">
@@ -688,7 +708,13 @@
                         <a href="cart.html" class="men-cart-link">
                             Add to Cart
                         </a>
-
+<!-- MEN WISHLIST HEART / قلب المفضلة للرجال -->
+<button
+    class="men-wishlist-heart"
+    type="button"
+    aria-label="Add to wishlist"
+    title="Add to wishlist"
+>♥</button>
                     </div>
 
                 </div>
@@ -699,10 +725,10 @@
 
             <!-- PRODUCT 11 -->
 
-            <div class="men-card" data-category="jackets" data-price="1850">
+            <div class="men-card" data-category="jackets" data-price="1850"data-color="white">
 
                 <img
-                    src="https://images.unsplash.com/photo-1516826957135-700dedea698c"
+                    src="css\images men\hoodie-hook-sage-mockup.png"
                     alt="Men Bomber Jacket">
 
                 <div class="men-info">
@@ -726,7 +752,13 @@
                         <a href="cart.html" class="men-cart-link">
                             Add to Cart
                         </a>
-
+<!-- MEN WISHLIST HEART / قلب المفضلة للرجال -->
+<button
+    class="men-wishlist-heart"
+    type="button"
+    aria-label="Add to wishlist"
+    title="Add to wishlist"
+>♥</button>
                     </div>
 
                 </div>
@@ -737,10 +769,10 @@
 
             <!-- PRODUCT 12 -->
 
-            <div class="men-card" data-category="shirts" data-price="1000">
+            <div class="men-card" data-category="shirts" data-price="1000" data-color="blue">
 
                 <img
-                    src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273"
+                    src="css\images men\popmelon-neon-8726714_1920.jpg"
                     alt="Men Linen Shirt">
 
                 <div class="men-info">
@@ -764,7 +796,13 @@
                         <a href="cart.html" class="men-cart-link">
                             Add to Cart
                         </a>
-
+<!-- MEN WISHLIST HEART / قلب المفضلة للرجال -->
+<button
+    class="men-wishlist-heart"
+    type="button"
+    aria-label="Add to wishlist"
+    title="Add to wishlist"
+>♥</button>
                     </div>
 
                 </div>
@@ -775,10 +813,10 @@
 
             <!-- PRODUCT 13 -->
 
-            <div class="men-card" data-category="outfits" data-price="1500">
+            <div class="men-card" data-category="outfits" data-price="1500"data-color="red">
 
                 <img
-                    src="https://images.unsplash.com/photo-1503341504253-dff4815485f1"
+                    src="css\images men\sweatshirt-flat-terra-mockup (2).png"
                     alt="Men Classic Outfit">
 
                 <div class="men-info">
@@ -802,7 +840,13 @@
                         <a href="cart.html" class="men-cart-link">
                             Add to Cart
                         </a>
-
+<!-- MEN WISHLIST HEART / قلب المفضلة للرجال -->
+<button
+    class="men-wishlist-heart"
+    type="button"
+    aria-label="Add to wishlist"
+    title="Add to wishlist"
+>♥</button>
                     </div>
 
                 </div>
@@ -813,10 +857,10 @@
 
             <!-- PRODUCT 14 -->
 
-            <div class="men-card" data-category="sweatshirts" data-price="1100">
+            <div class="men-card" data-category="sweatshirts" data-price="1100" data-color="green">
 
                 <img
-                    src="https://images.unsplash.com/photo-1598808503746-f34c53b9323e"
+                    src="css\images men\tshirt-flat-terra2-mockup (1).png"
                     alt="Men Sweatshirt">
 
                 <div class="men-info">
@@ -840,7 +884,13 @@
                         <a href="cart.html" class="men-cart-link">
                             Add to Cart
                         </a>
-
+<!-- MEN WISHLIST HEART / قلب المفضلة للرجال -->
+<button
+    class="men-wishlist-heart"
+    type="button"
+    aria-label="Add to wishlist"
+    title="Add to wishlist"
+>♥</button>
                     </div>
 
                 </div>
@@ -851,10 +901,10 @@
 
             <!-- PRODUCT 15 -->
 
-            <div class="men-card" data-category="shirts" data-price="850">
+            <div class="men-card" data-category="shirts" data-price="850" data-color="red">
 
                 <img
-                    src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3"
+                    src="css\images men\tshirt-flat-terra2-mockup.png"
                     alt="Men Check Shirt">
 
                 <div class="men-info">
@@ -878,7 +928,13 @@
                         <a href="cart.html" class="men-cart-link">
                             Add to Cart
                         </a>
-
+<!-- MEN WISHLIST HEART / قلب المفضلة للرجال -->
+<button
+    class="men-wishlist-heart"
+    type="button"
+    aria-label="Add to wishlist"
+    title="Add to wishlist"
+>♥</button>
                     </div>
 
                 </div>
@@ -889,10 +945,10 @@
 
             <!-- PRODUCT 16 -->
 
-            <div class="men-card" data-category="blazers" data-price="2500">
+            <div class="men-card" data-category="blazers" data-price="2500"data-color="green">
 
                 <img
-                    src="https://images.unsplash.com/photo-1490114538077-0a7f8cb49891"
+                    src="css\images men\tshirt-hanger-blue-mockup (1).png"
                     alt="Men Formal Blazer">
 
                 <div class="men-info">
@@ -916,7 +972,13 @@
                         <a href="cart.html" class="men-cart-link">
                             Add to Cart
                         </a>
-
+<!-- MEN WISHLIST HEART / قلب المفضلة للرجال -->
+<button
+    class="men-wishlist-heart"
+    type="button"
+    aria-label="Add to wishlist"
+    title="Add to wishlist"
+>♥</button>
                     </div>
 
                 </div>
@@ -927,10 +989,10 @@
 
             <!-- PRODUCT 17 -->
 
-            <div class="men-card" data-category="outfits" data-price="1550">
+            <div class="men-card" data-category="outfits" data-price="1550" data-color="blue">
 
                 <img
-                    src="https://images.unsplash.com/photo-1488161628813-04466f872be2"
+                    src="css\images men\tshirt-hanger-blue-mockup (2).png"
                     alt="Men Urban Outfit">
 
                 <div class="men-info">
@@ -954,7 +1016,13 @@
                         <a href="cart.html" class="men-cart-link">
                             Add to Cart
                         </a>
-
+<!-- MEN WISHLIST HEART / قلب المفضلة للرجال -->
+<button
+    class="men-wishlist-heart"
+    type="button"
+    aria-label="Add to wishlist"
+    title="Add to wishlist"
+>♥</button>
                     </div>
 
                 </div>
@@ -965,10 +1033,10 @@
 
             <!-- PRODUCT 18 -->
 
-            <div class="men-card" data-category="jackets" data-price="2100">
+            <div class="men-card" data-category="jackets" data-price="2100" data-color="black">
 
                 <img
-                    src="https://images.unsplash.com/photo-1551028719-00167b16eac5"
+                    src="css\images men\tshirt-hanger-sage-mockup (1).png"
                     alt="Men Winter Jacket">
 
                 <div class="men-info">
@@ -992,7 +1060,13 @@
                         <a href="cart.html" class="men-cart-link">
                             Add to Cart
                         </a>
-
+<!-- MEN WISHLIST HEART / قلب المفضلة للرجال -->
+<button
+    class="men-wishlist-heart"
+    type="button"
+    aria-label="Add to wishlist"
+    title="Add to wishlist"
+>♥</button>
                     </div>
 
                 </div>
@@ -1003,10 +1077,10 @@
 
             <!-- PRODUCT 19 -->
 
-            <div class="men-card" data-category="shirts" data-price="900">
+            <div class="men-card" data-category="shirts" data-price="900" data-color="red">
 
                 <img
-                    src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273"
+                    src="css\images men\tshirt-hanger-sage-mockup (2).png"
                     alt="Men Summer Shirt">
 
                 <div class="men-info">
@@ -1030,7 +1104,13 @@
                         <a href="cart.html" class="men-cart-link">
                             Add to Cart
                         </a>
-
+<!-- MEN WISHLIST HEART / قلب المفضلة للرجال -->
+<button
+    class="men-wishlist-heart"
+    type="button"
+    aria-label="Add to wishlist"
+    title="Add to wishlist"
+>♥</button>
                     </div>
 
                 </div>
@@ -1041,10 +1121,10 @@
 
             <!-- PRODUCT 20 -->
 
-            <div class="men-card" data-category="outfits" data-price="2000">
+            <div class="men-card" data-category="outfits" data-price="2000" data-color="red">
 
                 <img
-                    src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f"
+                    src="css\images men\tshirt-hanger-blue-mockup.png"
                     alt="Men Premium Collection">
 
                 <div class="men-info">
@@ -1068,7 +1148,13 @@
                         <a href="cart.html" class="men-cart-link">
                             Add to Cart
                         </a>
-
+<!-- MEN WISHLIST HEART / قلب المفضلة للرجال -->
+<button
+    class="men-wishlist-heart"
+    type="button"
+    aria-label="Add to wishlist"
+    title="Add to wishlist"
+>♥</button>
                     </div>
 
                 </div>
@@ -1082,7 +1168,122 @@
 
 </main>
 
+ <!-- FOOTER — الفوتر -->
 
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- BRAND -->
+
+            <div class="footer-brand">
+
+                <h2>
+                    STYLE STORE
+                </h2>
+
+                <p>
+                    Your destination for modern fashion,
+                    fresh collections and timeless style.
+                    Discover something made for you.
+                </p>
+
+                <a href="index.html" class="footer-main-button">
+                    EXPLORE STORE
+                </a>
+
+            </div>
+
+            <!-- SHOP -->
+
+            <div class="footer-column">
+
+                <h3>
+                    SHOP
+                </h3>
+
+                <a href="men.html">
+                    Men Collection
+                </a>
+
+                <a href="women.html">
+                    Women Collection
+                </a>
+
+                <a href="kids.html">
+                    Kids Collection
+                </a>
+
+                <a href="men-jeans.html">
+                    Jeans Collection
+                </a>
+
+                <a href="cart.html">
+                    Shopping Cart
+                </a>
+
+            </div>
+
+            <!-- DISCOVER -->
+
+            <div class="footer-column">
+
+                <h3>
+                    DISCOVER
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="index.html">
+                    Find Your Style
+                </a>
+
+                <a href="index.html">
+                    Special Offers
+                </a>
+
+                <a href="index.html">
+                    Featured Products
+                </a>
+
+                <a href="index.html">
+                    New Collection
+                </a>
+
+            </div>
+
+            <!-- ACCOUNT -->
+
+            <div class="footer-column">
+
+                <h3>
+                    MY ACCOUNT
+                </h3>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="login.html">
+                    My Account
+                </a>
+
+                <a href="cart.html">
+                    My Cart
+                </a>
+
+                <a href="cart.html">
+                    View Cart
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+<script src="script.js"></script>
 </body>
 
 </html> 
